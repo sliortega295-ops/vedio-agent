@@ -1,0 +1,34 @@
+{
+  "experiment": "SVA_N9_N6_TWO_CANDIDATE_CONCURRENCY",
+  "physical_gpu": 0,
+  "gpu_uuid": "GPU-87a0e759-5e45-c617-9c53-e3c9479fd05f",
+  "checkpoint": "/data/models/Wan2.1-T2V-1.3B",
+  "python": "/data/jiayu/yongyan_liu/auto_research/.conda/bin/python",
+  "prompt_id": "p00",
+  "prompt": "A blue car drives past a white picket fence on a sunny day.",
+  "seeds": [0, 1],
+  "input_frames": 81,
+  "resolution": "832*480",
+  "steps": 50,
+  "dense_warmup_steps": 5,
+  "guidance_scale": 6.0,
+  "shift": 8.0,
+  "precision": "bfloat16",
+  "attention_backend": "flash_attention_2",
+  "patterns": {
+    "N9": {
+      "key_indices": [3, 4, 5, 8, 9, 10, 13, 14, 15],
+      "rope_positions": [0, 1, 2, 3, 4, 5, 6, 7, 8],
+      "layout": "three-block compact"
+    },
+    "N6": {
+      "key_indices": [0, 1, 2, 9, 10, 11],
+      "rope_positions": [0, 1, 2, 3, 4, 5],
+      "layout": "dual-window compact"
+    }
+  },
+  "paired_blocks": 3,
+  "extend_to_blocks_if_cv_gt_5pct": 5,
+  "timing_scope": "denoising_only",
+  "full_rerun": false
+}

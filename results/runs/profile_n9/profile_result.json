@@ -1,0 +1,262 @@
+{
+  "status": "PROFILE_COMPLETED",
+  "pattern": "N9",
+  "excluded_warmup": {
+    "schema_version": 1,
+    "condition_id": "N9_PARALLEL_b-1_0a66558c",
+    "formal": false,
+    "pattern": "N9",
+    "pattern_spec": {
+      "key_indices": [
+        3,
+        4,
+        5,
+        8,
+        9,
+        10,
+        13,
+        14,
+        15
+      ],
+      "rope_positions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "layout": "three-block compact",
+      "decoded_pixel_frames": 33
+    },
+    "mode": "PARALLEL",
+    "block": -1,
+    "started_at": "2026-08-09T12:45:15.027400+00:00",
+    "release_ns": 1288600367698847,
+    "pair_end_ns": 1288830649202618,
+    "pair_makespan_s": 230.281503771,
+    "requests": [
+      {
+        "kind": "RESULT",
+        "worker_id": 0,
+        "condition_id": "N9_PARALLEL_b-1_0a66558c",
+        "pattern": "N9",
+        "mode": "PARALLEL",
+        "block": -1,
+        "seed": 0,
+        "service_start_ns": 1288600367785409,
+        "service_end_ns": 1288830649202618,
+        "service_latency_s": 230.281417209,
+        "cuda_elapsed_s": 230.281171875,
+        "dense_warmup_cuda_s": 58.29366015625,
+        "sparse_cuda_s": 171.987328125,
+        "stream_id": 102726048891424,
+        "output": {
+          "shape": [
+            16,
+            9,
+            60,
+            104
+          ],
+          "dtype": "torch.float32",
+          "sha256_f32le": "613a83e9ed90785c82cd7ef4afa31021ba5d8bea01c9dc97a685b331d54e9a06",
+          "mean": 0.16815876960754395,
+          "std": 1.0894055366516113,
+          "min": -4.0588297843933105,
+          "max": 4.191221714019775,
+          "nan_count": 0,
+          "inf_count": 0,
+          "saved_tensor": null
+        }
+      },
+      {
+        "kind": "RESULT",
+        "worker_id": 1,
+        "condition_id": "N9_PARALLEL_b-1_0a66558c",
+        "pattern": "N9",
+        "mode": "PARALLEL",
+        "block": -1,
+        "seed": 1,
+        "service_start_ns": 1288600368777583,
+        "service_end_ns": 1288830649112742,
+        "service_latency_s": 230.280335159,
+        "cuda_elapsed_s": 230.280078125,
+        "dense_warmup_cuda_s": 58.29141796875,
+        "sparse_cuda_s": 171.98721875,
+        "stream_id": 102726049406288,
+        "output": {
+          "shape": [
+            16,
+            9,
+            60,
+            104
+          ],
+          "dtype": "torch.float32",
+          "sha256_f32le": "3ad315e6d0ad105cd457fbbefd0d2d666795d2f63c7aade2007ab5c49a990d10",
+          "mean": 0.18114058673381805,
+          "std": 1.0531129837036133,
+          "min": -3.8065872192382812,
+          "max": 4.192144870758057,
+          "nan_count": 0,
+          "inf_count": 0,
+          "saved_tensor": null
+        }
+      }
+    ],
+    "fairness_ratio": 1.0000046988380455,
+    "allocator_peak_bytes": 16876726272,
+    "allocator_peak_gib": 15.717676162719727,
+    "allocator_reserved_peak_bytes": 20180893696,
+    "allocator_reserved_peak_gib": 18.794921875,
+    "telemetry": {
+      "path": "/data/jiayu/yongyan_liu/auto_research/research/sva_candidate_concurrency/runs/profile_n9/telemetry/N9_PARALLEL_b-1_0a66558c.csv",
+      "samples": 358,
+      "errors": [],
+      "foreign_process_observations": [],
+      "interference_free": true,
+      "peak_whole_device_vram_mib": 19944.0,
+      "mean_gpu_util_pct": 99.45251396648045,
+      "mean_power_w": 297.82698324022346,
+      "mean_sm_clock_mhz": 2082.150837988827,
+      "max_temperature_c": 81.0
+    },
+    "valid": true,
+    "profiler_enabled": false
+  },
+  "profiled_condition": {
+    "schema_version": 1,
+    "condition_id": "N9_PARALLEL_b0_4f62ae36",
+    "formal": false,
+    "pattern": "N9",
+    "pattern_spec": {
+      "key_indices": [
+        3,
+        4,
+        5,
+        8,
+        9,
+        10,
+        13,
+        14,
+        15
+      ],
+      "rope_positions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "layout": "three-block compact",
+      "decoded_pixel_frames": 33
+    },
+    "mode": "PARALLEL",
+    "block": 0,
+    "started_at": "2026-08-09T12:49:29.456885+00:00",
+    "release_ns": 1288832180524653,
+    "pair_end_ns": 1289065012824481,
+    "pair_makespan_s": 232.832299828,
+    "requests": [
+      {
+        "kind": "RESULT",
+        "worker_id": 0,
+        "condition_id": "N9_PARALLEL_b0_4f62ae36",
+        "pattern": "N9",
+        "mode": "PARALLEL",
+        "block": 0,
+        "seed": 0,
+        "service_start_ns": 1288832180717155,
+        "service_end_ns": 1289065006682090,
+        "service_latency_s": 232.825964935,
+        "cuda_elapsed_s": 232.825140625,
+        "dense_warmup_cuda_s": 60.772,
+        "sparse_cuda_s": 172.0529375,
+        "stream_id": 102726048891424,
+        "output": {
+          "shape": [
+            16,
+            9,
+            60,
+            104
+          ],
+          "dtype": "torch.float32",
+          "sha256_f32le": "613a83e9ed90785c82cd7ef4afa31021ba5d8bea01c9dc97a685b331d54e9a06",
+          "mean": 0.16815876960754395,
+          "std": 1.0894055366516113,
+          "min": -4.0588297843933105,
+          "max": 4.191221714019775,
+          "nan_count": 0,
+          "inf_count": 0,
+          "saved_tensor": null
+        }
+      },
+      {
+        "kind": "RESULT",
+        "worker_id": 1,
+        "condition_id": "N9_PARALLEL_b0_4f62ae36",
+        "pattern": "N9",
+        "mode": "PARALLEL",
+        "block": 0,
+        "seed": 1,
+        "service_start_ns": 1288832181334687,
+        "service_end_ns": 1289065012824481,
+        "service_latency_s": 232.831489794,
+        "cuda_elapsed_s": 232.830671875,
+        "dense_warmup_cuda_s": 60.77151171875,
+        "sparse_cuda_s": 172.05896875,
+        "stream_id": 102726049406288,
+        "output": {
+          "shape": [
+            16,
+            9,
+            60,
+            104
+          ],
+          "dtype": "torch.float32",
+          "sha256_f32le": "3ad315e6d0ad105cd457fbbefd0d2d666795d2f63c7aade2007ab5c49a990d10",
+          "mean": 0.18114058673381805,
+          "std": 1.0531129837036133,
+          "min": -3.8065872192382812,
+          "max": 4.192144870758057,
+          "nan_count": 0,
+          "inf_count": 0,
+          "saved_tensor": null
+        }
+      }
+    ],
+    "fairness_ratio": 1.0000237295655643,
+    "allocator_peak_bytes": 16876726272,
+    "allocator_peak_gib": 15.717676162719727,
+    "allocator_reserved_peak_bytes": 20180893696,
+    "allocator_reserved_peak_gib": 18.794921875,
+    "telemetry": {
+      "path": "/data/jiayu/yongyan_liu/auto_research/research/sva_candidate_concurrency/runs/profile_n9/telemetry/N9_PARALLEL_b0_4f62ae36.csv",
+      "samples": 367,
+      "errors": [],
+      "foreign_process_observations": [],
+      "interference_free": true,
+      "peak_whole_device_vram_mib": 19964.0,
+      "mean_gpu_util_pct": 99.15258855585832,
+      "mean_power_w": 299.4933514986376,
+      "mean_sm_clock_mhz": 2055.1634877384195,
+      "max_temperature_c": 79.0
+    },
+    "valid": true,
+    "profiler_enabled": true
+  },
+  "global_compute_guard": {
+    "path": "/data/jiayu/yongyan_liu/auto_research/research/sva_candidate_concurrency/runs/profile_n9/telemetry/global_compute_guard.jsonl",
+    "observations": 631,
+    "foreign_process_observations": [],
+    "errors": [],
+    "interference_free": true
+  },
+  "note": "Profiler timing is diagnostic and is not a formal performance result."
+}

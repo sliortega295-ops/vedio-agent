@@ -1,0 +1,9 @@
+--- before/bench_sparse_candidate_concurrency.py
++++ after/bench_sparse_candidate_concurrency.py
+@@ setup before persistent worker threads
++    # Eager one-thread CUDA linalg initialization (excluded from timings).
++    _linalg_a = torch.eye(2, dtype=torch.float32, device=device)
++    _linalg_b = torch.ones((2, 1), dtype=torch.float32, device=device)
++    torch.linalg.solve(_linalg_a, _linalg_b)
++    torch.cuda.synchronize()
++    del _linalg_a, _linalg_b

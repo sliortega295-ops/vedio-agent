@@ -1,0 +1,3 @@
+pattern,admission_pass,request_overlap_fraction,gpu_idle_fraction,top10_coverage,flashattention_share,main_128x256_same_name_overlap
+N6_PARALLEL,True,0.23214040175246284,0.0643940289171853,0.8847387022151045,0.24449208693427776,False
+N9_PARALLEL,True,0.15621015027231666,0.057778829266400974,0.8544892986656104,0.29025494819384506,False

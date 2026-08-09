@@ -1,0 +1,2 @@
+# Preserve raw telemetry CSV bytes (the Python csv writer emitted CRLF).
+results/runs/**/*.csv binary

@@ -1,0 +1,929 @@
+{
+  "status": "FAILED",
+  "finished_at": "2026-08-09T13:08:41.175283+00:00",
+  "error": "RuntimeError('global GPU0 compute guard observed interference: {\"foreign\": [{\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 10848.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 10848.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 10848.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 10848.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}], \"errors\": []}')",
+  "traceback": "Traceback (most recent call last):\n  File \"/data/jiayu/yongyan_liu/auto_research/research/sva_candidate_concurrency/package/bench_sparse_candidate_concurrency.py\", line 903, in main\n    warmup = run_condition(\n             ^^^^^^^^^^^^^^\n  File \"/data/jiayu/yongyan_liu/auto_research/research/sva_candidate_concurrency/package/bench_sparse_candidate_concurrency.py\", line 547, in run_condition\n    compute_guard.assert_clean()\n  File \"/data/jiayu/yongyan_liu/auto_research/research/sva_candidate_concurrency/package/bench_sparse_candidate_concurrency.py\", line 258, in assert_clean\n    raise RuntimeError(\nRuntimeError: global GPU0 compute guard observed interference: {\"foreign\": [{\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 7820.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 10848.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 10848.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 10848.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 10848.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}, {\"pid\": 3958381, \"process_name\": \"/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli\", \"used_memory_mib\": 714.0}], \"errors\": []}\n",
+  "global_compute_guard": {
+    "path": "/data/jiayu/yongyan_liu/auto_research/research/sva_candidate_concurrency/runs/profile_n9_serial/telemetry/global_compute_guard.jsonl",
+    "observations": 256,
+    "foreign_process_observations": [
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 7820.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 10848.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 10848.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 10848.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 10848.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      },
+      {
+        "pid": 3958381,
+        "process_name": "/data/anqian/stable-diffusion.cpp-cuda-sparse/bin/sd-cli",
+        "used_memory_mib": 714.0
+      }
+    ],
+    "errors": [],
+    "interference_free": false
+  }
+}

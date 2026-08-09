@@ -1,0 +1,574 @@
+{
+  "status": "FAILED",
+  "finished_at": "2026-08-09T11:22:57.219424+00:00",
+  "error": "RuntimeError('global GPU0 compute guard observed interference: {\"foreign\": [{\"pid\": 3173312, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 622.0}, {\"pid\": 3173312, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 622.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}], \"errors\": []}')",
+  "traceback": "Traceback (most recent call last):\n  File \"/data/jiayu/yongyan_liu/auto_research/research/sva_candidate_concurrency/package/bench_sparse_candidate_concurrency.py\", line 915, in main\n    warmups.append(run_condition(\n                   ^^^^^^^^^^^^^^\n  File \"/data/jiayu/yongyan_liu/auto_research/research/sva_candidate_concurrency/package/bench_sparse_candidate_concurrency.py\", line 547, in run_condition\n    compute_guard.assert_clean()\n  File \"/data/jiayu/yongyan_liu/auto_research/research/sva_candidate_concurrency/package/bench_sparse_candidate_concurrency.py\", line 258, in assert_clean\n    raise RuntimeError(\nRuntimeError: global GPU0 compute guard observed interference: {\"foreign\": [{\"pid\": 3173312, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 622.0}, {\"pid\": 3173312, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 622.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}, {\"pid\": 3176304, \"process_name\": \"/data/jinye/eval-envs/geneval/bin/python\", \"used_memory_mib\": 824.0}], \"errors\": []}\n",
+  "global_compute_guard": {
+    "path": "/data/jiayu/yongyan_liu/auto_research/research/sva_candidate_concurrency/runs/formal_n9_n6_v1/telemetry/global_compute_guard.jsonl",
+    "observations": 356,
+    "foreign_process_observations": [
+      {
+        "pid": 3173312,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 622.0
+      },
+      {
+        "pid": 3173312,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 622.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      },
+      {
+        "pid": 3176304,
+        "process_name": "/data/jinye/eval-envs/geneval/bin/python",
+        "used_memory_mib": 824.0
+      }
+    ],
+    "errors": [],
+    "interference_free": false
+  }
+}

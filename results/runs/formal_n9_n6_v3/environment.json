@@ -1,0 +1,33 @@
+{
+  "started_at": "2026-08-09T11:45:43.260879+00:00",
+  "hostname": "user-NF5280M6",
+  "pid": 3182605,
+  "python": "3.11.15 (main, Mar 11 2026, 17:20:07) [GCC 14.3.0]",
+  "platform": "Linux-7.0.0-28-generic-x86_64-with-glibc2.39",
+  "cuda_visible_devices": "0",
+  "gpu_initial": {
+    "index": 0,
+    "uuid": "GPU-87a0e759-5e45-c617-9c53-e3c9479fd05f",
+    "name": "NVIDIA L40",
+    "memory_used_mib": 14.0,
+    "memory_total_mib": 46068.0,
+    "utilization_gpu_pct": 0.0,
+    "pstate": "P8"
+  },
+  "initial_compute_processes": [],
+  "torch_version": "2.4.0+cu121",
+  "torch_cuda": "12.1",
+  "cuda_device_name": "NVIDIA L40",
+  "cuda_capability": [
+    8,
+    9
+  ],
+  "wan_source": "/data/jiayu/yongyan_liu/auto_research/research/sva_candidate_concurrency/package/third_party/wan/__init__.py",
+  "flash_attention_2_available": true,
+  "flash_attention_3_available": false,
+  "model_load_seconds_excluded": [
+    79.20297596789896,
+    77.03319818596356
+  ],
+  "checkpoint": "/data/models/Wan2.1-T2V-1.3B"
+}

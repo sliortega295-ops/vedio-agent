@@ -1,0 +1,1309 @@
+{
+  "analysis_type": "E016_NSYS_TIMELINE_ONLY",
+  "cross_trace": {},
+  "schema_version": 3,
+  "selection_semantics": "full CUDA launch API nested in selected CPU NVTX step; process-scoped launch correlation selects complete asynchronous GPU kernel interval",
+  "traces": {
+    "N6_PARALLEL": {
+      "additional_out_of_phase_gpu_busy_not_covered_by_selected_phase_ns": 720549,
+      "admission": {
+        "ambiguous_api_request_count_all_trace": 0,
+        "ambiguous_api_request_count_selected_steps": 0,
+        "ambiguous_selected_step_api_count": 0,
+        "async_tail_kernel_count": 18820,
+        "capture_trigger": {
+          "duration_ns": 166390486775,
+          "end_ns": 166448552182,
+          "name": "sva_capture_N6_PARALLEL",
+          "pid": 3940062,
+          "start_ns": 58065407
+        },
+        "closed_selected_step_range_count": 20,
+        "expected_request_count": 2,
+        "fully_nested_selected_launch_api_count": 69940,
+        "issues": [],
+        "kernel_api_join_ambiguous_count_all_trace": 0,
+        "kernel_api_join_ambiguous_count_selected_steps": 0,
+        "kernel_api_join_missing_count_all_trace": 0,
+        "observed_requests": [
+          "0",
+          "1"
+        ],
+        "pass": true,
+        "request_attribution_kernel_sum_fraction": 1.0,
+        "selected_kernel_outside_cpu_step_envelope_count": 1876,
+        "selected_step_passes_with_launch_count": 20,
+        "selected_steps": [
+          20,
+          24
+        ]
+      },
+      "all_gpu_kernel_busy_union_inside_analysis_window_ns": 11103457464,
+      "all_kernel_medians": {
+        "ampere_bf16_s16816gemm_bf16_128x128_ldg8_relu_f2f_stages_64x3_tn": {
+          "calls": 20,
+          "median_ns": 80064.5,
+          "total_ns": 1851754
+        },
+        "ampere_bf16_s16816gemm_bf16_128x64_ldg8_relu_f2f_stages_64x4_tn": {
+          "calls": 1220,
+          "median_ns": 34272.0,
+          "total_ns": 42342421
+        },
+        "ampere_bf16_s1688gemm_bf16_128x128_ldg8_relu_f2f_tn": {
+          "calls": 4200,
+          "median_ns": 452850.5,
+          "total_ns": 3023906473
+        },
+        "ampere_sgemm_64x64_tn": {
+          "calls": 20,
+          "median_ns": 105920.0,
+          "total_ns": 2441517
+        },
+        "sm86_xmma_fprop_implicit_gemm_bf16bf16_bf16f32_f32_nhwckrsc_nhwc_tilesize128x64x32_stage4_warpsize2x2x1_g1_tensor16x8x16_execute_kernel__5x_cudnn": {
+          "calls": 20,
+          "median_ns": 35600.0,
+          "total_ns": 725315
+        },
+        "std::enable_if<!T7, void>::type internal::gemvx::kernel<int, int, float, float, float, float, (bool)0, (bool)1, (bool)1, (bool)0, (int)6, (bool)0, cublasGemvParamsEx<int, cublasGemvTensorStridedBatched<const float>, cublasGemvTensorStridedBatched<const float>, cublasGemvTensorStridedBatched<float>, float>>(T13)": {
+          "calls": 20,
+          "median_ns": 7280.0,
+          "total_ns": 165280
+        },
+        "std::enable_if<!T7, void>::type internal::gemvx::kernel<int, int, float, float, float, float, (bool)0, (bool)1, (bool)1, (bool)0, (int)7, (bool)0, cublasGemvParamsEx<int, cublasGemvTensorStridedBatched<const float>, cublasGemvTensorStridedBatched<const float>, cublasGemvTensorStridedBatched<float>, float>>(T13)": {
+          "calls": 20,
+          "median_ns": 21200.5,
+          "total_ns": 419782
+        },
+        "void at::native::<unnamed>::CatArrayBatchedCopy<at::native::<unnamed>::OpaqueType<(unsigned int)16>, unsigned int, (int)4, (int)64, (int)64>(T1 *, at::native::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::native::<unnamed>::TensorSizeStride<T2, (unsigned int)4>, int, T2)": {
+          "calls": 1200,
+          "median_ns": 20448.0,
+          "total_ns": 27707178
+        },
+        "void at::native::<unnamed>::CatArrayBatchedCopy<at::native::<unnamed>::OpaqueType<(unsigned int)2>, unsigned int, (int)3, (int)64, (int)64>(T1 *, at::native::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::native::<unnamed>::TensorSizeStride<T2, (unsigned int)4>, int, T2)": {
+          "calls": 20,
+          "median_ns": 185409.0,
+          "total_ns": 7520044
+        },
+        "void at::native::<unnamed>::CatArrayBatchedCopy_aligned16_contig<at::native::<unnamed>::OpaqueType<(unsigned int)4>, unsigned int, (int)1, (int)128, (int)1>(T1 *, at::native::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::native::<unnamed>::TensorSizeStride<T2, (unsigned int)4>, int, T2)": {
+          "calls": 1800,
+          "median_ns": 2656.0,
+          "total_ns": 6134113
+        },
+        "void at::native::<unnamed>::CatArrayBatchedCopy_aligned16_contig<at::native::<unnamed>::OpaqueType<(unsigned int)8>, unsigned int, (int)2, (int)128, (int)1>(T1 *, at::native::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::native::<unnamed>::TensorSizeStride<T2, (unsigned int)4>, int, T2)": {
+          "calls": 20,
+          "median_ns": 3216.0,
+          "total_ns": 72192
+        },
+        "void at::native::<unnamed>::CatArrayBatchedCopy_contig<at::native::<unnamed>::OpaqueType<(unsigned int)2>, unsigned int, (int)2, (int)128, (int)1>(T1 *, at::native::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::native::<unnamed>::TensorSizeStride<T2, (unsigned int)4>, int, T2)": {
+          "calls": 20,
+          "median_ns": 9296.0,
+          "total_ns": 298976
+        },
+        "void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)": {
+          "calls": 1820,
+          "median_ns": 178993.0,
+          "total_ns": 325762501
+        },
+        "void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl_nocast<at::native::BinaryFunctor<c10::complex<double>, c10::complex<double>, c10::complex<double>, at::native::binary_internal::MulFunctor<c10::complex<double>>>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)": {
+          "calls": 1200,
+          "median_ns": 381250.0,
+          "total_ns": 459050953
+        },
+        "void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl_nocast<at::native::BinaryFunctor<double, double, double, at::native::binary_internal::MulFunctor<double>>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)": {
+          "calls": 20,
+          "median_ns": 1968.0,
+          "total_ns": 56609
+        },
+        "void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl_nocast<at::native::BinaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float>>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)": {
+          "calls": 3620,
+          "median_ns": 135985.0,
+          "total_ns": 453168818
+        },
+        "void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl_nocast<at::native::CUDAFunctor_add<float>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)": {
+          "calls": 1240,
+          "median_ns": 174432.5,
+          "total_ns": 194207772
+        },
+        "void at::native::elementwise_kernel<(int)128, (int)4, void at::native::gpu_kernel_impl<at::native::<unnamed>::pow_tensor_tensor_kernel(at::TensorIteratorBase &)::[lambda() (instance 1)]::operator ()() const::[lambda() (instance 6)]::operator ()() const::[lambda(double, double) (instance 1)]>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)": {
+          "calls": 20,
+          "median_ns": 7008.0,
+          "total_ns": 166304
+        },
+        "void at::native::elementwise_kernel<(int)128, (int)4, void at::native::gpu_kernel_impl<at::native::BinaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float>>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)": {
+          "calls": 3600,
+          "median_ns": 122689.0,
+          "total_ns": 409667257
+        },
+        "void at::native::elementwise_kernel<(int)128, (int)4, void at::native::gpu_kernel_impl_nocast<at::native::CUDAFunctor_add<c10::BFloat16>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)": {
+          "calls": 20,
+          "median_ns": 28960.0,
+          "total_ns": 591043
+        },
+        "void at::native::elementwise_kernel<(int)128, (int)4, void at::native::gpu_kernel_impl_nocast<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase &)::[lambda() (instance 3)]::operator ()() const::[lambda() (instance 12)]::operator ()() const::[lambda(c10::BFloat16) (instance 1)]>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)": {
+          "calls": 20,
+          "median_ns": 6816.0,
+          "total_ns": 138336
+        },
+        "void at::native::index_elementwise_kernel<(int)128, (int)4, void at::native::gpu_index_kernel<void at::native::index_kernel_impl<at::native::OpaqueType<(int)16>>(at::TensorIteratorBase &, c10::ArrayRef<long>, c10::ArrayRef<long>)::[lambda(char *, const char *, long) (instance 1)]>(at::TensorIteratorBase &, c10::ArrayRef<long>, c10::ArrayRef<long>, const T1 &)::[lambda(int) (instance 1)]>(long, T3)": {
+          "calls": 1200,
+          "median_ns": 13936.0,
+          "total_ns": 17587727
+        },
+        "void at::native::reduce_kernel<(int)512, (int)1, at::native::ReduceOp<float, at::native::MeanOps<float, float, float, float>, unsigned int, float, (int)4>>(T3)": {
+          "calls": 2400,
+          "median_ns": 27648.0,
+          "total_ns": 142553568
+        },
+        "void at::native::unrolled_elementwise_kernel<at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>, TrivialOffsetCalculator<(int)2, unsigned int>, TrivialOffsetCalculator<(int)1, unsigned int>, at::native::memory::LoadWithCast<(int)2>, at::native::memory::StoreWithCast<(int)1>>(int, T1, T2, T3, T4, T5, T6)": {
+          "calls": 620,
+          "median_ns": 229281.5,
+          "total_ns": 139753115
+        },
+        "void at::native::unrolled_elementwise_kernel<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase &)::[lambda() (instance 3)]::operator ()() const::[lambda() (instance 12)]::operator ()() const::[lambda(c10::BFloat16) (instance 1)], at::detail::Array<char *, (int)2>, TrivialOffsetCalculator<(int)1, unsigned int>, TrivialOffsetCalculator<(int)1, unsigned int>, at::native::memory::LoadWithCast<(int)1>, at::native::memory::StoreWithCast<(int)1>>(int, T1, T2, T3, T4, T5, T6)": {
+          "calls": 21180,
+          "median_ns": 32320.0,
+          "total_ns": 1467481367
+        },
+        "void at::native::unrolled_elementwise_kernel<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase &)::[lambda() (instance 3)]::operator ()() const::[lambda() (instance 6)]::operator ()() const::[lambda(double) (instance 1)], at::detail::Array<char *, (int)2>, TrivialOffsetCalculator<(int)1, unsigned int>, TrivialOffsetCalculator<(int)1, unsigned int>, at::native::memory::LoadWithCast<(int)1>, at::native::memory::StoreWithCast<(int)1>>(int, T1, T2, T3, T4, T5, T6)": {
+          "calls": 1220,
+          "median_ns": 284145.5,
+          "total_ns": 347319834
+        },
+        "void at::native::unrolled_elementwise_kernel<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase &)::[lambda() (instance 3)]::operator ()() const::[lambda() (instance 7)]::operator ()() const::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>, TrivialOffsetCalculator<(int)1, unsigned int>, TrivialOffsetCalculator<(int)1, unsigned int>, at::native::memory::LoadWithCast<(int)1>, at::native::memory::StoreWithCast<(int)1>>(int, T1, T2, T3, T4, T5, T6)": {
+          "calls": 4880,
+          "median_ns": 158097.0,
+          "total_ns": 791473397
+        },
+        "void at::native::vectorized_elementwise_kernel<(int)4, at::native::<unnamed>::silu_kernel(at::TensorIteratorBase &)::[lambda() (instance 1)]::operator ()() const::[lambda() (instance 2)]::operator ()() const::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3)": {
+          "calls": 40,
+          "median_ns": 1408.0,
+          "total_ns": 101537
+        },
+        "void at::native::vectorized_elementwise_kernel<(int)4, at::native::BUnaryFunctor<double, double, double, at::native::binary_internal::MulFunctor<double>>, at::detail::Array<char *, (int)2>>(int, T2, T3)": {
+          "calls": 20,
+          "median_ns": 1408.0,
+          "total_ns": 65504
+        },
+        "void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctorOnSelf_add<float>, at::detail::Array<char *, (int)2>>(int, T2, T3)": {
+          "calls": 3620,
+          "median_ns": 3200.0,
+          "total_ns": 18989835
+        },
+        "void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)": {
+          "calls": 1780,
+          "median_ns": 272129.5,
+          "total_ns": 339174251
+        },
+        "void at::native::vectorized_elementwise_kernel<(int)4, at::native::FillFunctor<c10::BFloat16>, at::detail::Array<char *, (int)1>>(int, T2, T3)": {
+          "calls": 20,
+          "median_ns": 4224.0,
+          "total_ns": 114465
+        },
+        "void at::native::vectorized_elementwise_kernel<(int)4, at::native::FillFunctor<int>, at::detail::Array<char *, (int)1>>(int, T2, T3)": {
+          "calls": 1800,
+          "median_ns": 1920.0,
+          "total_ns": 8052078
+        },
+        "void at::native::vectorized_elementwise_kernel<(int)4, at::native::FillFunctor<long>, at::detail::Array<char *, (int)1>>(int, T2, T3)": {
+          "calls": 20,
+          "median_ns": 1088.0,
+          "total_ns": 38208
+        },
+        "void at::native::vectorized_elementwise_kernel<(int)4, at::native::GeluCUDAKernelImpl(at::TensorIteratorBase &, at::native::GeluType)::[lambda() (instance 1)]::operator ()() const::[lambda() (instance 4)]::operator ()() const::[lambda(c10::BFloat16) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3)": {
+          "calls": 620,
+          "median_ns": 526355.0,
+          "total_ns": 319389239
+        },
+        "void at::native::vectorized_elementwise_kernel<(int)4, at::native::cos_kernel_cuda(at::TensorIteratorBase &)::[lambda() (instance 2)]::operator ()() const::[lambda() (instance 1)]::operator ()() const::[lambda(double) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3)": {
+          "calls": 20,
+          "median_ns": 2592.0,
+          "total_ns": 66784
+        },
+        "void at::native::vectorized_elementwise_kernel<(int)4, at::native::neg_kernel_cuda(at::TensorIteratorBase &)::[lambda() (instance 2)]::operator ()() const::[lambda() (instance 6)]::operator ()() const::[lambda(double) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3)": {
+          "calls": 20,
+          "median_ns": 1312.0,
+          "total_ns": 37664
+        },
+        "void at::native::vectorized_elementwise_kernel<(int)4, at::native::rsqrt_kernel_cuda(at::TensorIteratorBase &)::[lambda() (instance 2)]::operator ()() const::[lambda() (instance 2)]::operator ()() const::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3)": {
+          "calls": 2400,
+          "median_ns": 1824.0,
+          "total_ns": 5798145
+        },
+        "void at::native::vectorized_elementwise_kernel<(int)4, at::native::sin_kernel_cuda(at::TensorIteratorBase &)::[lambda() (instance 2)]::operator ()() const::[lambda() (instance 1)]::operator ()() const::[lambda(double) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3)": {
+          "calls": 20,
+          "median_ns": 3792.0,
+          "total_ns": 99872
+        },
+        "void at::native::vectorized_elementwise_kernel<(int)4, void at::native::<unnamed>::pow_tensor_scalar_kernel_impl<float, float>(at::TensorIteratorBase &, T2)::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3)": {
+          "calls": 2400,
+          "median_ns": 149441.0,
+          "total_ns": 301370208
+        },
+        "void at_cuda_detail::cub::DeviceScanInitKernel<at_cuda_detail::cub::ScanTileState<int, (bool)1>>(T1, int)": {
+          "calls": 1800,
+          "median_ns": 1216.0,
+          "total_ns": 4411707
+        },
+        "void at_cuda_detail::cub::DeviceScanKernel<at_cuda_detail::cub::DeviceScanPolicy<int>::Policy600, const int *, int *, at_cuda_detail::cub::ScanTileState<int, (bool)1>, std::plus<int>, at_cuda_detail::cub::NullType, int, int>(T2, T3, T4, int, T5, T6, T7)": {
+          "calls": 1800,
+          "median_ns": 2272.0,
+          "total_ns": 4654683
+        },
+        "void cublasLt::epilogue::impl::globalKernel<(int)8, (int)32, float, float, float, (bool)1, (bool)1, (int)1>(int, int, long, T3 *, cublasLtEpilogue_t, int, T4 *, long, void *, long, long, long, T5 *, long, int *)": {
+          "calls": 20,
+          "median_ns": 2224.0,
+          "total_ns": 52544
+        },
+        "void cudnn::engines_precompiled::nchwToNhwcKernel<__nv_bfloat16, __nv_bfloat16, float, (bool)0, (bool)1, (cudnnKernelDataType_t)0>(cudnn::engines_precompiled::nchw2nhwc_params_t<T3>, const T1 *, T2 *)": {
+          "calls": 40,
+          "median_ns": 3440.0,
+          "total_ns": 137858
+        },
+        "void cudnn::engines_precompiled::nhwcToNchwKernel<__nv_bfloat16, __nv_bfloat16, float, (bool)1, (bool)0, (cudnnKernelDataType_t)0>(cudnn::engines_precompiled::nhwc2nchw_params_t<T3>, const T1 *, T2 *)": {
+          "calls": 20,
+          "median_ns": 32080.0,
+          "total_ns": 639555
+        },
+        "void cutlass::Kernel<cutlass_80_tensorop_bf16_s16816gemm_bf16_128x256_32x3_tn_align8>(T1::Params)": {
+          "calls": 600,
+          "median_ns": 2449549.5,
+          "total_ns": 1467415042
+        },
+        "void flash::flash_fwd_kernel<Flash_fwd_kernel_traits<(int)128, (int)128, (int)32, (int)4, (bool)0, (bool)0, cutlass::bfloat16_t, Flash_kernel_traits<(int)128, (int)128, (int)32, (int)4, cutlass::bfloat16_t>>, (bool)0, (bool)0, (bool)0, (bool)0, (bool)0, (bool)1, (bool)0, (bool)0>(flash::Flash_fwd_params)": {
+          "calls": 1200,
+          "median_ns": 2407581.5,
+          "total_ns": 3344683710
+        },
+        "void gemv2T_kernel_val<int, int, float, float, float, float, (int)128, (int)16, (int)4, (int)4, (bool)0, (bool)1, cublasGemvParamsEx<int, cublasGemvTensorStridedBatched<const float>, cublasGemvTensorStridedBatched<const float>, cublasGemvTensorStridedBatched<float>, float>>(T13, T6, T6)": {
+          "calls": 20,
+          "median_ns": 109440.0,
+          "total_ns": 2217644
+        },
+        "void splitKreduce_kernel<(int)32, (int)16, int, float, float, float, float, (bool)1, (bool)0, (bool)0>(cublasSplitKParams<T6>, const T4 *, const T5 *, T5 *, const T6 *, const T6 *, const T7 *, const T4 *, T7 *, void *, long, T6 *, int *)": {
+          "calls": 20,
+          "median_ns": 1808.0,
+          "total_ns": 56544
+        }
+      },
+      "analysis_window": {
+        "definition": "GPU envelope (min start/max end) of complete kernels whose launch APIs are fully nested in selected steps 20..24",
+        "duration_ns": 11867664174,
+        "end_ns": 107422605253,
+        "start_ns": 95554941079
+      },
+      "any_kernel_concurrency_fraction": 0.23214040175246284,
+      "any_kernel_concurrency_ns": 2577393808,
+      "blocking_memcpy_api": {
+        "count": 0,
+        "median_ns": null,
+        "p95_ns": null,
+        "sum_ns": 0,
+        "union_ns": 0
+      },
+      "classification_limits": "Nsight Systems timeline only; no Tensor/SM/DRAM SOL, occupancy, register/shared-memory, or tail-wave claim",
+      "cuda_launch_api": {
+        "count": 69940,
+        "median_ns": 7983.0,
+        "p95_ns": 664448.0,
+        "sum_ns": 13956181473,
+        "union_ns": 7683914810
+      },
+      "gpu_idle_definition": "physical gaps in the union of every recorded GPU kernel inside the selected-kernel GPU envelope; guard/out-of-step work is not mislabeled idle",
+      "gpu_idle_fraction_inside_analysis_window": 0.0643940289171853,
+      "gpu_idle_inside_analysis_window_ns": 764206710,
+      "gpu_kernel_busy_union_ns": 11102736915,
+      "gpu_memcpy_activity": {
+        "count": 6195,
+        "median_ns": 122113,
+        "p95_ns": 397410.0,
+        "sum_ns": 1066713634,
+        "union_ns": 1045978699
+      },
+      "gpu_memset_activity": {
+        "count": 49,
+        "median_ns": 832,
+        "p95_ns": 3328.0,
+        "sum_ns": 58784,
+        "union_ns": 58784
+      },
+      "hot_kernel_cross_request_overlap": [
+        {
+          "name": "void flash::flash_fwd_kernel<Flash_fwd_kernel_traits<(int)128, (int)128, (int)32, (int)4, (bool)0, (bool)0, cutlass::bfloat16_t, Flash_kernel_traits<(int)128, (int)128, (int)32, (int)4, cutlass::bfloat16_t>>, (bool)0, (bool)0, (bool)0, (bool)0, (bool)0, (bool)1, (bool)0, (bool)0>(flash::Flash_fwd_params)",
+          "overlaps": true,
+          "request0_calls": 600,
+          "request1_calls": 600,
+          "same_name_cross_request_overlap_ns": 233583384
+        },
+        {
+          "name": "ampere_bf16_s1688gemm_bf16_128x128_ldg8_relu_f2f_tn",
+          "overlaps": true,
+          "request0_calls": 2100,
+          "request1_calls": 2100,
+          "same_name_cross_request_overlap_ns": 17084386
+        },
+        {
+          "name": "void at::native::unrolled_elementwise_kernel<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase &)::[lambda() (instance 3)]::operator ()() const::[lambda() (instance 12)]::operator ()() const::[lambda(c10::BFloat16) (instance 1)], at::detail::Array<char *, (int)2>, TrivialOffsetCalculator<(int)1, unsigned int>, TrivialOffsetCalculator<(int)1, unsigned int>, at::native::memory::LoadWithCast<(int)1>, at::native::memory::StoreWithCast<(int)1>>(int, T1, T2, T3, T4, T5, T6)",
+          "overlaps": true,
+          "request0_calls": 10590,
+          "request1_calls": 10590,
+          "same_name_cross_request_overlap_ns": 46155529
+        },
+        {
+          "name": "void cutlass::Kernel<cutlass_80_tensorop_bf16_s16816gemm_bf16_128x256_32x3_tn_align8>(T1::Params)",
+          "overlaps": false,
+          "request0_calls": 300,
+          "request1_calls": 300,
+          "same_name_cross_request_overlap_ns": 0
+        },
+        {
+          "name": "void at::native::unrolled_elementwise_kernel<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase &)::[lambda() (instance 3)]::operator ()() const::[lambda() (instance 7)]::operator ()() const::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>, TrivialOffsetCalculator<(int)1, unsigned int>, TrivialOffsetCalculator<(int)1, unsigned int>, at::native::memory::LoadWithCast<(int)1>, at::native::memory::StoreWithCast<(int)1>>(int, T1, T2, T3, T4, T5, T6)",
+          "overlaps": true,
+          "request0_calls": 2440,
+          "request1_calls": 2440,
+          "same_name_cross_request_overlap_ns": 1819592
+        },
+        {
+          "name": "void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl_nocast<at::native::BinaryFunctor<c10::complex<double>, c10::complex<double>, c10::complex<double>, at::native::binary_internal::MulFunctor<c10::complex<double>>>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)",
+          "overlaps": true,
+          "request0_calls": 600,
+          "request1_calls": 600,
+          "same_name_cross_request_overlap_ns": 1227720
+        },
+        {
+          "name": "void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl_nocast<at::native::BinaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float>>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)",
+          "overlaps": true,
+          "request0_calls": 1810,
+          "request1_calls": 1810,
+          "same_name_cross_request_overlap_ns": 3017169
+        },
+        {
+          "name": "void at::native::elementwise_kernel<(int)128, (int)4, void at::native::gpu_kernel_impl<at::native::BinaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float>>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)",
+          "overlaps": true,
+          "request0_calls": 1800,
+          "request1_calls": 1800,
+          "same_name_cross_request_overlap_ns": 1132706
+        },
+        {
+          "name": "void at::native::unrolled_elementwise_kernel<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase &)::[lambda() (instance 3)]::operator ()() const::[lambda() (instance 6)]::operator ()() const::[lambda(double) (instance 1)], at::detail::Array<char *, (int)2>, TrivialOffsetCalculator<(int)1, unsigned int>, TrivialOffsetCalculator<(int)1, unsigned int>, at::native::memory::LoadWithCast<(int)1>, at::native::memory::StoreWithCast<(int)1>>(int, T1, T2, T3, T4, T5, T6)",
+          "overlaps": true,
+          "request0_calls": 610,
+          "request1_calls": 610,
+          "same_name_cross_request_overlap_ns": 7828691
+        },
+        {
+          "name": "void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",
+          "overlaps": false,
+          "request0_calls": 890,
+          "request1_calls": 890,
+          "same_name_cross_request_overlap_ns": 0
+        }
+      ],
+      "kernel_count": 69940,
+      "kernel_duration_sum_ns": 13680130723,
+      "largest_gpu_idle_gaps": [
+        {
+          "duration_ns": 1377768,
+          "end_ns": 101019117236,
+          "start_ns": 101017739468
+        },
+        {
+          "duration_ns": 1375272,
+          "end_ns": 98642820444,
+          "start_ns": 98641445172
+        },
+        {
+          "duration_ns": 1374664,
+          "end_ns": 95762311909,
+          "start_ns": 95760937245
+        },
+        {
+          "duration_ns": 1372360,
+          "end_ns": 97419904263,
+          "start_ns": 97418531903
+        },
+        {
+          "duration_ns": 1372007,
+          "end_ns": 101696369165,
+          "start_ns": 101694997158
+        },
+        {
+          "duration_ns": 1371784,
+          "end_ns": 97340456557,
+          "start_ns": 97339084773
+        },
+        {
+          "duration_ns": 1368903,
+          "end_ns": 106119919931,
+          "start_ns": 106118551028
+        },
+        {
+          "duration_ns": 1365896,
+          "end_ns": 100386532597,
+          "start_ns": 100385166701
+        },
+        {
+          "duration_ns": 1365640,
+          "end_ns": 102130415506,
+          "start_ns": 102129049866
+        },
+        {
+          "duration_ns": 1365543,
+          "end_ns": 96120000832,
+          "start_ns": 96118635289
+        },
+        {
+          "duration_ns": 1365447,
+          "end_ns": 100424954380,
+          "start_ns": 100423588933
+        },
+        {
+          "duration_ns": 1363912,
+          "end_ns": 100820674042,
+          "start_ns": 100819310130
+        },
+        {
+          "duration_ns": 1362311,
+          "end_ns": 101973212703,
+          "start_ns": 101971850392
+        },
+        {
+          "duration_ns": 1359847,
+          "end_ns": 105572012655,
+          "start_ns": 105570652808
+        },
+        {
+          "duration_ns": 1359655,
+          "end_ns": 107115261081,
+          "start_ns": 107113901426
+        },
+        {
+          "duration_ns": 1359496,
+          "end_ns": 96159671104,
+          "start_ns": 96158311608
+        },
+        {
+          "duration_ns": 1359496,
+          "end_ns": 97459535236,
+          "start_ns": 97458175740
+        },
+        {
+          "duration_ns": 1358727,
+          "end_ns": 106996930951,
+          "start_ns": 106995572224
+        },
+        {
+          "duration_ns": 1356167,
+          "end_ns": 103796528212,
+          "start_ns": 103795172045
+        },
+        {
+          "duration_ns": 1352552,
+          "end_ns": 95801404897,
+          "start_ns": 95800052345
+        }
+      ],
+      "launch_sync_idle_amdahl": {
+        "max_reclaimable_gpu_idle_fraction": 0.0643940289171853,
+        "warning": "Physical GPU-idle fraction is an optimistic wall upper bound. CUDA API sums may overlap GPU work/each other and are not added to this bound."
+      },
+      "launch_to_kernel_queue_delay_ns": {
+        "count": 69940,
+        "negative_count": 82,
+        "nonnegative_median": 319521001.0,
+        "nonnegative_p95": 330632532.0,
+        "signed_median": 319521001.0,
+        "signed_p95": 330632532.0
+      },
+      "operator_kernel_duration_sum_ns_by_request": {},
+      "out_of_phase_gpu_busy_union_inside_analysis_window_ns": 1319754,
+      "per_context_stream_request_lane": {
+        "(347578247938048, 1, 13, '0')": {
+          "calls": 34970,
+          "kernel_busy_union_ns": 6758035637,
+          "kernel_duration_sum_ns": 6758035637
+        },
+        "(347578247938048, 1, 17, '1')": {
+          "calls": 34970,
+          "kernel_busy_union_ns": 6922095086,
+          "kernel_duration_sum_ns": 6922095086
+        }
+      },
+      "per_request": {
+        "0": {
+          "kernel_busy_union_ns": 6758035637,
+          "kernel_count": 34970,
+          "kernel_duration_sum_ns": 6758035637
+        },
+        "1": {
+          "kernel_busy_union_ns": 6922095086,
+          "kernel_count": 34970,
+          "kernel_duration_sum_ns": 6922095086
+        }
+      },
+      "request_overlap_fraction": 0.23214040175246284,
+      "request_overlap_union_ns": 2577393808,
+      "selected_cpu_step_window": {
+        "definition": "envelope of closed CPU NVTX DiT ranges for steps 20..24; used only to select fully nested APIs",
+        "duration_ns": 11541792598,
+        "end_ns": 107096640582,
+        "start_ns": 95554847984
+      },
+      "selected_phase_gpu_kernel_busy_union_ns": 11102736915,
+      "selected_phase_unoccupied_definition": "gaps in only the fixed step-20..24 selected-kernel union; this is reported diagnostically and is not a physical GPU-idle/Amdahl bound",
+      "selected_phase_unoccupied_fraction_inside_analysis_window": 0.06445474423482789,
+      "selected_phase_unoccupied_inside_analysis_window_ns": 764927259,
+      "sqlite": "/data/jiayu/yongyan_liu/auto_research/research/sva_candidate_concurrency/profiles/nsys_n6_parallel.sqlite",
+      "synchronization_activity": {
+        "count": 75,
+        "median_ns": 5575,
+        "p95_ns": 322922979.0,
+        "sum_ns": 6368716669,
+        "union_ns": 3208938693
+      },
+      "synchronization_api": {
+        "count": 20,
+        "median_ns": 154791611.0,
+        "p95_ns": 320053780.0,
+        "sum_ns": 3157604163,
+        "union_ns": 1588645567
+      },
+      "top10_kernel_time_coverage": 0.8847387022151045,
+      "top_kernels": [
+        {
+          "calls": 1200,
+          "median_ns": 2407581.5,
+          "name": "void flash::flash_fwd_kernel<Flash_fwd_kernel_traits<(int)128, (int)128, (int)32, (int)4, (bool)0, (bool)0, cutlass::bfloat16_t, Flash_kernel_traits<(int)128, (int)128, (int)32, (int)4, cutlass::bfloat16_t>>, (bool)0, (bool)0, (bool)0, (bool)0, (bool)0, (bool)1, (bool)0, (bool)0>(flash::Flash_fwd_params)",
+          "p95_ns": 5681087.0,
+          "share_of_kernel_sum": 0.24449208693427776,
+          "total_ns": 3344683710
+        },
+        {
+          "calls": 4200,
+          "median_ns": 452850.5,
+          "name": "ampere_bf16_s1688gemm_bf16_128x128_ldg8_relu_f2f_tn",
+          "p95_ns": 2033452.0,
+          "share_of_kernel_sum": 0.22104368256627807,
+          "total_ns": 3023906473
+        },
+        {
+          "calls": 21180,
+          "median_ns": 32320.0,
+          "name": "void at::native::unrolled_elementwise_kernel<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase &)::[lambda() (instance 3)]::operator ()() const::[lambda() (instance 12)]::operator ()() const::[lambda(c10::BFloat16) (instance 1)], at::detail::Array<char *, (int)2>, TrivialOffsetCalculator<(int)1, unsigned int>, TrivialOffsetCalculator<(int)1, unsigned int>, at::native::memory::LoadWithCast<(int)1>, at::native::memory::StoreWithCast<(int)1>>(int, T1, T2, T3, T4, T5, T6)",
+          "p95_ns": 178337.0,
+          "share_of_kernel_sum": 0.1072710046938928,
+          "total_ns": 1467481367
+        },
+        {
+          "calls": 600,
+          "median_ns": 2449549.5,
+          "name": "void cutlass::Kernel<cutlass_80_tensorop_bf16_s16816gemm_bf16_128x256_32x3_tn_align8>(T1::Params)",
+          "p95_ns": 2552910.0,
+          "share_of_kernel_sum": 0.10726615642150834,
+          "total_ns": 1467415042
+        },
+        {
+          "calls": 4880,
+          "median_ns": 158097.0,
+          "name": "void at::native::unrolled_elementwise_kernel<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase &)::[lambda() (instance 3)]::operator ()() const::[lambda() (instance 7)]::operator ()() const::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>, TrivialOffsetCalculator<(int)1, unsigned int>, TrivialOffsetCalculator<(int)1, unsigned int>, at::native::memory::LoadWithCast<(int)1>, at::native::memory::StoreWithCast<(int)1>>(int, T1, T2, T3, T4, T5, T6)",
+          "p95_ns": 308034.0,
+          "share_of_kernel_sum": 0.05785568961481626,
+          "total_ns": 791473397
+        },
+        {
+          "calls": 1200,
+          "median_ns": 381250.0,
+          "name": "void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl_nocast<at::native::BinaryFunctor<c10::complex<double>, c10::complex<double>, c10::complex<double>, at::native::binary_internal::MulFunctor<c10::complex<double>>>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)",
+          "p95_ns": 418882.0,
+          "share_of_kernel_sum": 0.0335560355595295,
+          "total_ns": 459050953
+        },
+        {
+          "calls": 3620,
+          "median_ns": 135985.0,
+          "name": "void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl_nocast<at::native::BinaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float>>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)",
+          "p95_ns": 205601.0,
+          "share_of_kernel_sum": 0.033126059039633345,
+          "total_ns": 453168818
+        },
+        {
+          "calls": 3600,
+          "median_ns": 122689.0,
+          "name": "void at::native::elementwise_kernel<(int)128, (int)4, void at::native::gpu_kernel_impl<at::native::BinaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float>>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)",
+          "p95_ns": 209665.0,
+          "share_of_kernel_sum": 0.029946150756530312,
+          "total_ns": 409667257
+        },
+        {
+          "calls": 1220,
+          "median_ns": 284145.5,
+          "name": "void at::native::unrolled_elementwise_kernel<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase &)::[lambda() (instance 3)]::operator ()() const::[lambda() (instance 6)]::operator ()() const::[lambda(double) (instance 1)], at::detail::Array<char *, (int)2>, TrivialOffsetCalculator<(int)1, unsigned int>, TrivialOffsetCalculator<(int)1, unsigned int>, at::native::memory::LoadWithCast<(int)1>, at::native::memory::StoreWithCast<(int)1>>(int, T1, T2, T3, T4, T5, T6)",
+          "p95_ns": 327042.0,
+          "share_of_kernel_sum": 0.025388634146314218,
+          "total_ns": 347319834
+        },
+        {
+          "calls": 1780,
+          "median_ns": 272129.5,
+          "name": "void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",
+          "p95_ns": 306561.0,
+          "share_of_kernel_sum": 0.02479320248232397,
+          "total_ns": 339174251
+        }
+      ]
+    },
+    "N9_PARALLEL": {
+      "additional_out_of_phase_gpu_busy_not_covered_by_selected_phase_ns": 1061218,
+      "admission": {
+        "ambiguous_api_request_count_all_trace": 0,
+        "ambiguous_api_request_count_selected_steps": 0,
+        "ambiguous_selected_step_api_count": 0,
+        "async_tail_kernel_count": 18820,
+        "capture_trigger": {
+          "duration_ns": 232844345346,
+          "end_ns": 232891903692,
+          "name": "sva_capture_N9_PARALLEL",
+          "pid": 3801391,
+          "start_ns": 47558346
+        },
+        "closed_selected_step_range_count": 20,
+        "expected_request_count": 2,
+        "fully_nested_selected_launch_api_count": 69940,
+        "issues": [],
+        "kernel_api_join_ambiguous_count_all_trace": 0,
+        "kernel_api_join_ambiguous_count_selected_steps": 0,
+        "kernel_api_join_missing_count_all_trace": 0,
+        "observed_requests": [
+          "0",
+          "1"
+        ],
+        "pass": true,
+        "request_attribution_kernel_sum_fraction": 1.0,
+        "selected_kernel_outside_cpu_step_envelope_count": 1847,
+        "selected_step_passes_with_launch_count": 20,
+        "selected_steps": [
+          20,
+          24
+        ]
+      },
+      "all_gpu_kernel_busy_union_inside_analysis_window_ns": 17988999384,
+      "all_kernel_medians": {
+        "ampere_bf16_s16816gemm_bf16_128x128_ldg8_relu_f2f_stages_64x3_tn": {
+          "calls": 20,
+          "median_ns": 166064.5,
+          "total_ns": 3416169
+        },
+        "ampere_bf16_s16816gemm_bf16_128x64_ldg8_relu_f2f_stages_64x4_tn": {
+          "calls": 1220,
+          "median_ns": 57280.0,
+          "total_ns": 82622359
+        },
+        "ampere_bf16_s1688gemm_bf16_128x128_ldg8_relu_f2f_tn": {
+          "calls": 600,
+          "median_ns": 2668022.5,
+          "total_ns": 1633197777
+        },
+        "ampere_sgemm_64x32_sliced1x4_tn": {
+          "calls": 20,
+          "median_ns": 175632.5,
+          "total_ns": 4753932
+        },
+        "sm86_xmma_fprop_implicit_gemm_bf16bf16_bf16f32_f32_nhwckrsc_nhwc_tilesize128x64x32_stage4_warpsize2x2x1_g1_tensor16x8x16_execute_kernel__5x_cudnn": {
+          "calls": 20,
+          "median_ns": 85584.5,
+          "total_ns": 1758949
+        },
+        "std::enable_if<!T7, void>::type internal::gemvx::kernel<int, int, float, float, float, float, (bool)0, (bool)1, (bool)1, (bool)0, (int)6, (bool)0, cublasGemvParamsEx<int, cublasGemvTensorStridedBatched<const float>, cublasGemvTensorStridedBatched<const float>, cublasGemvTensorStridedBatched<float>, float>>(T13)": {
+          "calls": 20,
+          "median_ns": 6256.0,
+          "total_ns": 155009
+        },
+        "std::enable_if<!T7, void>::type internal::gemvx::kernel<int, int, float, float, float, float, (bool)0, (bool)1, (bool)1, (bool)0, (int)7, (bool)0, cublasGemvParamsEx<int, cublasGemvTensorStridedBatched<const float>, cublasGemvTensorStridedBatched<const float>, cublasGemvTensorStridedBatched<float>, float>>(T13)": {
+          "calls": 20,
+          "median_ns": 18480.0,
+          "total_ns": 443552
+        },
+        "void at::native::<unnamed>::CatArrayBatchedCopy<at::native::<unnamed>::OpaqueType<(unsigned int)16>, unsigned int, (int)4, (int)64, (int)64>(T1 *, at::native::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::native::<unnamed>::TensorSizeStride<T2, (unsigned int)4>, int, T2)": {
+          "calls": 1200,
+          "median_ns": 20304.0,
+          "total_ns": 31514681
+        },
+        "void at::native::<unnamed>::CatArrayBatchedCopy<at::native::<unnamed>::OpaqueType<(unsigned int)2>, unsigned int, (int)3, (int)64, (int)64>(T1 *, at::native::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::native::<unnamed>::TensorSizeStride<T2, (unsigned int)4>, int, T2)": {
+          "calls": 20,
+          "median_ns": 977682.5,
+          "total_ns": 20183026
+        },
+        "void at::native::<unnamed>::CatArrayBatchedCopy_aligned16_contig<at::native::<unnamed>::OpaqueType<(unsigned int)4>, unsigned int, (int)1, (int)128, (int)1>(T1 *, at::native::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::native::<unnamed>::TensorSizeStride<T2, (unsigned int)4>, int, T2)": {
+          "calls": 1800,
+          "median_ns": 2848.0,
+          "total_ns": 6814414
+        },
+        "void at::native::<unnamed>::CatArrayBatchedCopy_aligned16_contig<at::native::<unnamed>::OpaqueType<(unsigned int)8>, unsigned int, (int)2, (int)128, (int)1>(T1 *, at::native::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::native::<unnamed>::TensorSizeStride<T2, (unsigned int)4>, int, T2)": {
+          "calls": 20,
+          "median_ns": 2208.0,
+          "total_ns": 79136
+        },
+        "void at::native::<unnamed>::CatArrayBatchedCopy_contig<at::native::<unnamed>::OpaqueType<(unsigned int)2>, unsigned int, (int)2, (int)128, (int)1>(T1 *, at::native::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::native::<unnamed>::TensorSizeStride<T2, (unsigned int)4>, int, T2)": {
+          "calls": 20,
+          "median_ns": 11968.0,
+          "total_ns": 447169
+        },
+        "void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)": {
+          "calls": 1820,
+          "median_ns": 278144.5,
+          "total_ns": 522915464
+        },
+        "void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl_nocast<at::native::BinaryFunctor<c10::complex<double>, c10::complex<double>, c10::complex<double>, at::native::binary_internal::MulFunctor<c10::complex<double>>>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)": {
+          "calls": 1200,
+          "median_ns": 566225.0,
+          "total_ns": 673896470
+        },
+        "void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl_nocast<at::native::BinaryFunctor<double, double, double, at::native::binary_internal::MulFunctor<double>>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)": {
+          "calls": 20,
+          "median_ns": 1856.0,
+          "total_ns": 64320
+        },
+        "void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl_nocast<at::native::BinaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float>>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)": {
+          "calls": 3620,
+          "median_ns": 261008.0,
+          "total_ns": 814125070
+        },
+        "void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl_nocast<at::native::CUDAFunctor_add<float>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)": {
+          "calls": 1240,
+          "median_ns": 275776.5,
+          "total_ns": 344470938
+        },
+        "void at::native::elementwise_kernel<(int)128, (int)4, void at::native::gpu_kernel_impl<at::native::<unnamed>::pow_tensor_tensor_kernel(at::TensorIteratorBase &)::[lambda() (instance 1)]::operator ()() const::[lambda() (instance 6)]::operator ()() const::[lambda(double, double) (instance 1)]>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)": {
+          "calls": 20,
+          "median_ns": 6432.0,
+          "total_ns": 170144
+        },
+        "void at::native::elementwise_kernel<(int)128, (int)4, void at::native::gpu_kernel_impl<at::native::BinaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float>>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)": {
+          "calls": 3600,
+          "median_ns": 214176.0,
+          "total_ns": 688643208
+        },
+        "void at::native::elementwise_kernel<(int)128, (int)4, void at::native::gpu_kernel_impl_nocast<at::native::CUDAFunctor_add<c10::BFloat16>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)": {
+          "calls": 20,
+          "median_ns": 133280.5,
+          "total_ns": 2444165
+        },
+        "void at::native::elementwise_kernel<(int)128, (int)4, void at::native::gpu_kernel_impl_nocast<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase &)::[lambda() (instance 3)]::operator ()() const::[lambda() (instance 12)]::operator ()() const::[lambda(c10::BFloat16) (instance 1)]>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)": {
+          "calls": 20,
+          "median_ns": 9328.0,
+          "total_ns": 229953
+        },
+        "void at::native::index_elementwise_kernel<(int)128, (int)4, void at::native::gpu_index_kernel<void at::native::index_kernel_impl<at::native::OpaqueType<(int)16>>(at::TensorIteratorBase &, c10::ArrayRef<long>, c10::ArrayRef<long>)::[lambda(char *, const char *, long) (instance 1)]>(at::TensorIteratorBase &, c10::ArrayRef<long>, c10::ArrayRef<long>, const T1 &)::[lambda(int) (instance 1)]>(long, T3)": {
+          "calls": 1200,
+          "median_ns": 14272.0,
+          "total_ns": 16309023
+        },
+        "void at::native::reduce_kernel<(int)512, (int)1, at::native::ReduceOp<float, at::native::MeanOps<float, float, float, float>, unsigned int, float, (int)4>>(T3)": {
+          "calls": 2400,
+          "median_ns": 98432.5,
+          "total_ns": 288500311
+        },
+        "void at::native::unrolled_elementwise_kernel<at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>, TrivialOffsetCalculator<(int)2, unsigned int>, TrivialOffsetCalculator<(int)1, unsigned int>, at::native::memory::LoadWithCast<(int)2>, at::native::memory::StoreWithCast<(int)1>>(int, T1, T2, T3, T4, T5, T6)": {
+          "calls": 620,
+          "median_ns": 353313.0,
+          "total_ns": 219145797
+        },
+        "void at::native::unrolled_elementwise_kernel<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase &)::[lambda() (instance 3)]::operator ()() const::[lambda() (instance 12)]::operator ()() const::[lambda(c10::BFloat16) (instance 1)], at::detail::Array<char *, (int)2>, TrivialOffsetCalculator<(int)1, unsigned int>, TrivialOffsetCalculator<(int)1, unsigned int>, at::native::memory::LoadWithCast<(int)1>, at::native::memory::StoreWithCast<(int)1>>(int, T1, T2, T3, T4, T5, T6)": {
+          "calls": 21180,
+          "median_ns": 39392.5,
+          "total_ns": 2220779558
+        },
+        "void at::native::unrolled_elementwise_kernel<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase &)::[lambda() (instance 3)]::operator ()() const::[lambda() (instance 6)]::operator ()() const::[lambda(double) (instance 1)], at::detail::Array<char *, (int)2>, TrivialOffsetCalculator<(int)1, unsigned int>, TrivialOffsetCalculator<(int)1, unsigned int>, at::native::memory::LoadWithCast<(int)1>, at::native::memory::StoreWithCast<(int)1>>(int, T1, T2, T3, T4, T5, T6)": {
+          "calls": 1220,
+          "median_ns": 413889.0,
+          "total_ns": 502206784
+        },
+        "void at::native::unrolled_elementwise_kernel<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase &)::[lambda() (instance 3)]::operator ()() const::[lambda() (instance 7)]::operator ()() const::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>, TrivialOffsetCalculator<(int)1, unsigned int>, TrivialOffsetCalculator<(int)1, unsigned int>, at::native::memory::LoadWithCast<(int)1>, at::native::memory::StoreWithCast<(int)1>>(int, T1, T2, T3, T4, T5, T6)": {
+          "calls": 4880,
+          "median_ns": 214240.5,
+          "total_ns": 1131843338
+        },
+        "void at::native::vectorized_elementwise_kernel<(int)4, at::native::<unnamed>::silu_kernel(at::TensorIteratorBase &)::[lambda() (instance 1)]::operator ()() const::[lambda() (instance 2)]::operator ()() const::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3)": {
+          "calls": 40,
+          "median_ns": 1408.0,
+          "total_ns": 182880
+        },
+        "void at::native::vectorized_elementwise_kernel<(int)4, at::native::BUnaryFunctor<double, double, double, at::native::binary_internal::MulFunctor<double>>, at::detail::Array<char *, (int)2>>(int, T2, T3)": {
+          "calls": 20,
+          "median_ns": 6688.0,
+          "total_ns": 127393
+        },
+        "void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctorOnSelf_add<float>, at::detail::Array<char *, (int)2>>(int, T2, T3)": {
+          "calls": 3620,
+          "median_ns": 7648.0,
+          "total_ns": 28774271
+        },
+        "void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)": {
+          "calls": 1780,
+          "median_ns": 409585.0,
+          "total_ns": 497736464
+        },
+        "void at::native::vectorized_elementwise_kernel<(int)4, at::native::FillFunctor<c10::BFloat16>, at::detail::Array<char *, (int)1>>(int, T2, T3)": {
+          "calls": 20,
+          "median_ns": 9776.0,
+          "total_ns": 188512
+        },
+        "void at::native::vectorized_elementwise_kernel<(int)4, at::native::FillFunctor<int>, at::detail::Array<char *, (int)1>>(int, T2, T3)": {
+          "calls": 1800,
+          "median_ns": 1600.0,
+          "total_ns": 7967574
+        },
+        "void at::native::vectorized_elementwise_kernel<(int)4, at::native::FillFunctor<long>, at::detail::Array<char *, (int)1>>(int, T2, T3)": {
+          "calls": 20,
+          "median_ns": 1200.0,
+          "total_ns": 47424
+        },
+        "void at::native::vectorized_elementwise_kernel<(int)4, at::native::GeluCUDAKernelImpl(at::TensorIteratorBase &, at::native::GeluType)::[lambda() (instance 1)]::operator ()() const::[lambda() (instance 4)]::operator ()() const::[lambda(c10::BFloat16) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3)": {
+          "calls": 620,
+          "median_ns": 745186.0,
+          "total_ns": 451153570
+        },
+        "void at::native::vectorized_elementwise_kernel<(int)4, at::native::cos_kernel_cuda(at::TensorIteratorBase &)::[lambda() (instance 2)]::operator ()() const::[lambda() (instance 1)]::operator ()() const::[lambda(double) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3)": {
+          "calls": 20,
+          "median_ns": 2512.0,
+          "total_ns": 74976
+        },
+        "void at::native::vectorized_elementwise_kernel<(int)4, at::native::neg_kernel_cuda(at::TensorIteratorBase &)::[lambda() (instance 2)]::operator ()() const::[lambda() (instance 6)]::operator ()() const::[lambda(double) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3)": {
+          "calls": 20,
+          "median_ns": 2112.0,
+          "total_ns": 67136
+        },
+        "void at::native::vectorized_elementwise_kernel<(int)4, at::native::rsqrt_kernel_cuda(at::TensorIteratorBase &)::[lambda() (instance 2)]::operator ()() const::[lambda() (instance 2)]::operator ()() const::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3)": {
+          "calls": 2400,
+          "median_ns": 1664.0,
+          "total_ns": 5436630
+        },
+        "void at::native::vectorized_elementwise_kernel<(int)4, at::native::sin_kernel_cuda(at::TensorIteratorBase &)::[lambda() (instance 2)]::operator ()() const::[lambda() (instance 1)]::operator ()() const::[lambda(double) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3)": {
+          "calls": 20,
+          "median_ns": 2528.0,
+          "total_ns": 94272
+        },
+        "void at::native::vectorized_elementwise_kernel<(int)4, void at::native::<unnamed>::pow_tensor_scalar_kernel_impl<float, float>(at::TensorIteratorBase &, T2)::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3)": {
+          "calls": 2400,
+          "median_ns": 263041.0,
+          "total_ns": 494975924
+        },
+        "void at_cuda_detail::cub::DeviceScanInitKernel<at_cuda_detail::cub::ScanTileState<int, (bool)1>>(T1, int)": {
+          "calls": 1800,
+          "median_ns": 1120.0,
+          "total_ns": 3300647
+        },
+        "void at_cuda_detail::cub::DeviceScanKernel<at_cuda_detail::cub::DeviceScanPolicy<int>::Policy600, const int *, int *, at_cuda_detail::cub::ScanTileState<int, (bool)1>, std::plus<int>, at_cuda_detail::cub::NullType, int, int>(T2, T3, T4, int, T5, T6, T7)": {
+          "calls": 1800,
+          "median_ns": 2112.0,
+          "total_ns": 4555982
+        },
+        "void cublasLt::epilogue::impl::globalKernel<(int)8, (int)32, float, float, float, (bool)1, (bool)1, (int)1>(int, int, long, T3 *, cublasLtEpilogue_t, int, T4 *, long, void *, long, long, long, T5 *, long, int *)": {
+          "calls": 20,
+          "median_ns": 1760.0,
+          "total_ns": 62720
+        },
+        "void cudnn::engines_precompiled::nchwToNhwcKernel<__nv_bfloat16, __nv_bfloat16, float, (bool)0, (bool)1, (cudnnKernelDataType_t)0>(cudnn::engines_precompiled::nchw2nhwc_params_t<T3>, const T1 *, T2 *)": {
+          "calls": 40,
+          "median_ns": 7136.0,
+          "total_ns": 310016
+        },
+        "void cudnn::engines_precompiled::nhwcToNchwKernel<__nv_bfloat16, __nv_bfloat16, float, (bool)1, (bool)0, (cudnnKernelDataType_t)0>(cudnn::engines_precompiled::nhwc2nchw_params_t<T3>, const T1 *, T2 *)": {
+          "calls": 20,
+          "median_ns": 152705.0,
+          "total_ns": 2863975
+        },
+        "void cutlass::Kernel<cutlass_80_tensorop_bf16_s16816gemm_bf16_128x256_32x3_tn_align8>(T1::Params)": {
+          "calls": 600,
+          "median_ns": 3220487.0,
+          "total_ns": 2020117212
+        },
+        "void cutlass::Kernel<cutlass_80_tensorop_bf16_s16816gemm_bf16_256x128_32x3_tn_align8>(T1::Params)": {
+          "calls": 3600,
+          "median_ns": 531985.0,
+          "total_ns": 2029335779
+        },
+        "void flash::flash_fwd_kernel<Flash_fwd_kernel_traits<(int)128, (int)128, (int)32, (int)4, (bool)0, (bool)0, cutlass::bfloat16_t, Flash_kernel_traits<(int)128, (int)128, (int)32, (int)4, cutlass::bfloat16_t>>, (bool)0, (bool)0, (bool)0, (bool)0, (bool)0, (bool)1, (bool)0, (bool)0>(flash::Flash_fwd_params)": {
+          "calls": 1200,
+          "median_ns": 4933196.0,
+          "total_ns": 6036675011
+        },
+        "void gemv2T_kernel_val<int, int, float, float, float, float, (int)128, (int)16, (int)4, (int)4, (bool)0, (bool)1, cublasGemvParamsEx<int, cublasGemvTensorStridedBatched<const float>, cublasGemvTensorStridedBatched<const float>, cublasGemvTensorStridedBatched<float>, float>>(T13, T6, T6)": {
+          "calls": 20,
+          "median_ns": 125808.0,
+          "total_ns": 2582502
+        },
+        "void splitKreduce_kernel<(int)32, (int)16, int, float, float, float, float, (bool)1, (bool)0, (bool)0>(cublasSplitKParams<T6>, const T4 *, const T5 *, T5 *, const T6 *, const T6 *, const T7 *, const T4 *, T7 *, void *, long, T6 *, int *)": {
+          "calls": 20,
+          "median_ns": 1680.0,
+          "total_ns": 75104
+        }
+      },
+      "analysis_window": {
+        "definition": "GPU envelope (min start/max end) of complete kernels whose launch APIs are fully nested in selected steps 20..24",
+        "duration_ns": 19092119709,
+        "end_ns": 137088238399,
+        "start_ns": 117996118690
+      },
+      "any_kernel_concurrency_fraction": 0.15621015027231666,
+      "any_kernel_concurrency_ns": 2809898524,
+      "blocking_memcpy_api": {
+        "count": 0,
+        "median_ns": null,
+        "p95_ns": null,
+        "sum_ns": 0,
+        "union_ns": 0
+      },
+      "classification_limits": "Nsight Systems timeline only; no Tensor/SM/DRAM SOL, occupancy, register/shared-memory, or tail-wave claim",
+      "cuda_launch_api": {
+        "count": 69940,
+        "median_ns": 10377.0,
+        "p95_ns": 795141.0,
+        "sum_ns": 20801358967,
+        "union_ns": 13183275115
+      },
+      "gpu_idle_definition": "physical gaps in the union of every recorded GPU kernel inside the selected-kernel GPU envelope; guard/out-of-step work is not mislabeled idle",
+      "gpu_idle_fraction_inside_analysis_window": 0.057778829266400974,
+      "gpu_idle_inside_analysis_window_ns": 1103120325,
+      "gpu_kernel_busy_union_ns": 17987938166,
+      "gpu_memcpy_activity": {
+        "count": 6212,
+        "median_ns": 168368.5,
+        "p95_ns": 582529.0,
+        "sum_ns": 1581210343,
+        "union_ns": 1581083014
+      },
+      "gpu_memset_activity": {
+        "count": 51,
+        "median_ns": 1024,
+        "p95_ns": 3712.0,
+        "sum_ns": 83424,
+        "union_ns": 83424
+      },
+      "hot_kernel_cross_request_overlap": [
+        {
+          "name": "void flash::flash_fwd_kernel<Flash_fwd_kernel_traits<(int)128, (int)128, (int)32, (int)4, (bool)0, (bool)0, cutlass::bfloat16_t, Flash_kernel_traits<(int)128, (int)128, (int)32, (int)4, cutlass::bfloat16_t>>, (bool)0, (bool)0, (bool)0, (bool)0, (bool)0, (bool)1, (bool)0, (bool)0>(flash::Flash_fwd_params)",
+          "overlaps": true,
+          "request0_calls": 600,
+          "request1_calls": 600,
+          "same_name_cross_request_overlap_ns": 140260998
+        },
+        {
+          "name": "void at::native::unrolled_elementwise_kernel<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase &)::[lambda() (instance 3)]::operator ()() const::[lambda() (instance 12)]::operator ()() const::[lambda(c10::BFloat16) (instance 1)], at::detail::Array<char *, (int)2>, TrivialOffsetCalculator<(int)1, unsigned int>, TrivialOffsetCalculator<(int)1, unsigned int>, at::native::memory::LoadWithCast<(int)1>, at::native::memory::StoreWithCast<(int)1>>(int, T1, T2, T3, T4, T5, T6)",
+          "overlaps": true,
+          "request0_calls": 10590,
+          "request1_calls": 10590,
+          "same_name_cross_request_overlap_ns": 68229830
+        },
+        {
+          "name": "void cutlass::Kernel<cutlass_80_tensorop_bf16_s16816gemm_bf16_256x128_32x3_tn_align8>(T1::Params)",
+          "overlaps": true,
+          "request0_calls": 1800,
+          "request1_calls": 1800,
+          "same_name_cross_request_overlap_ns": 24660095
+        },
+        {
+          "name": "void cutlass::Kernel<cutlass_80_tensorop_bf16_s16816gemm_bf16_128x256_32x3_tn_align8>(T1::Params)",
+          "overlaps": false,
+          "request0_calls": 300,
+          "request1_calls": 300,
+          "same_name_cross_request_overlap_ns": 0
+        },
+        {
+          "name": "ampere_bf16_s1688gemm_bf16_128x128_ldg8_relu_f2f_tn",
+          "overlaps": false,
+          "request0_calls": 300,
+          "request1_calls": 300,
+          "same_name_cross_request_overlap_ns": 0
+        },
+        {
+          "name": "void at::native::unrolled_elementwise_kernel<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase &)::[lambda() (instance 3)]::operator ()() const::[lambda() (instance 7)]::operator ()() const::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>, TrivialOffsetCalculator<(int)1, unsigned int>, TrivialOffsetCalculator<(int)1, unsigned int>, at::native::memory::LoadWithCast<(int)1>, at::native::memory::StoreWithCast<(int)1>>(int, T1, T2, T3, T4, T5, T6)",
+          "overlaps": true,
+          "request0_calls": 2440,
+          "request1_calls": 2440,
+          "same_name_cross_request_overlap_ns": 10126616
+        },
+        {
+          "name": "void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl_nocast<at::native::BinaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float>>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)",
+          "overlaps": true,
+          "request0_calls": 1810,
+          "request1_calls": 1810,
+          "same_name_cross_request_overlap_ns": 253473
+        },
+        {
+          "name": "void at::native::elementwise_kernel<(int)128, (int)4, void at::native::gpu_kernel_impl<at::native::BinaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float>>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)",
+          "overlaps": true,
+          "request0_calls": 1800,
+          "request1_calls": 1800,
+          "same_name_cross_request_overlap_ns": 9917759
+        },
+        {
+          "name": "void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl_nocast<at::native::BinaryFunctor<c10::complex<double>, c10::complex<double>, c10::complex<double>, at::native::binary_internal::MulFunctor<c10::complex<double>>>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)",
+          "overlaps": false,
+          "request0_calls": 600,
+          "request1_calls": 600,
+          "same_name_cross_request_overlap_ns": 0
+        },
+        {
+          "name": "void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",
+          "overlaps": true,
+          "request0_calls": 910,
+          "request1_calls": 910,
+          "same_name_cross_request_overlap_ns": 966977
+        }
+      ],
+      "kernel_count": 69940,
+      "kernel_duration_sum_ns": 20797836690,
+      "largest_gpu_idle_gaps": [
+        {
+          "duration_ns": 1031907,
+          "end_ns": 123737698716,
+          "start_ns": 123736666809
+        },
+        {
+          "duration_ns": 1007458,
+          "end_ns": 133287575683,
+          "start_ns": 133286568225
+        },
+        {
+          "duration_ns": 525281,
+          "end_ns": 121195398492,
+          "start_ns": 121194873211
+        },
+        {
+          "duration_ns": 525058,
+          "end_ns": 118708221377,
+          "start_ns": 118707696319
+        },
+        {
+          "duration_ns": 523490,
+          "end_ns": 131528255155,
+          "start_ns": 131527731665
+        },
+        {
+          "duration_ns": 523041,
+          "end_ns": 121216937295,
+          "start_ns": 121216414254
+        },
+        {
+          "duration_ns": 522913,
+          "end_ns": 132839119784,
+          "start_ns": 132838596871
+        },
+        {
+          "duration_ns": 522817,
+          "end_ns": 128215756605,
+          "start_ns": 128215233788
+        },
+        {
+          "duration_ns": 522657,
+          "end_ns": 131845821366,
+          "start_ns": 131845298709
+        },
+        {
+          "duration_ns": 522145,
+          "end_ns": 128638755232,
+          "start_ns": 128638233087
+        },
+        {
+          "duration_ns": 522113,
+          "end_ns": 126560445975,
+          "start_ns": 126559923862
+        },
+        {
+          "duration_ns": 521985,
+          "end_ns": 132076175023,
+          "start_ns": 132075653038
+        },
+        {
+          "duration_ns": 521761,
+          "end_ns": 134578465368,
+          "start_ns": 134577943607
+        },
+        {
+          "duration_ns": 521697,
+          "end_ns": 125581611002,
+          "start_ns": 125581089305
+        },
+        {
+          "duration_ns": 521025,
+          "end_ns": 131819191416,
+          "start_ns": 131818670391
+        },
+        {
+          "duration_ns": 520993,
+          "end_ns": 134328809773,
+          "start_ns": 134328288780
+        },
+        {
+          "duration_ns": 520929,
+          "end_ns": 121763461913,
+          "start_ns": 121762940984
+        },
+        {
+          "duration_ns": 520897,
+          "end_ns": 119915629741,
+          "start_ns": 119915108844
+        },
+        {
+          "duration_ns": 520738,
+          "end_ns": 133626020829,
+          "start_ns": 133625500091
+        },
+        {
+          "duration_ns": 520674,
+          "end_ns": 130694465341,
+          "start_ns": 130693944667
+        }
+      ],
+      "launch_sync_idle_amdahl": {
+        "max_reclaimable_gpu_idle_fraction": 0.057778829266400974,
+        "warning": "Physical GPU-idle fraction is an optimistic wall upper bound. CUDA API sums may overlap GPU work/each other and are not added to this bound."
+      },
+      "launch_to_kernel_queue_delay_ns": {
+        "count": 69940,
+        "negative_count": 49,
+        "nonnegative_median": 515182226.5,
+        "nonnegative_p95": 527113643.0,
+        "signed_median": 515182226.5,
+        "signed_p95": 527113643.0
+      },
+      "operator_kernel_duration_sum_ns_by_request": {},
+      "out_of_phase_gpu_busy_union_inside_analysis_window_ns": 8157908,
+      "per_context_stream_request_lane": {
+        "(345251734618112, 1, 13, '0')": {
+          "calls": 34970,
+          "kernel_busy_union_ns": 10317701617,
+          "kernel_duration_sum_ns": 10317701617
+        },
+        "(345251734618112, 1, 17, '1')": {
+          "calls": 34970,
+          "kernel_busy_union_ns": 10480135073,
+          "kernel_duration_sum_ns": 10480135073
+        }
+      },
+      "per_request": {
+        "0": {
+          "kernel_busy_union_ns": 10317701617,
+          "kernel_count": 34970,
+          "kernel_duration_sum_ns": 10317701617
+        },
+        "1": {
+          "kernel_busy_union_ns": 10480135073,
+          "kernel_count": 34970,
+          "kernel_duration_sum_ns": 10480135073
+        }
+      },
+      "request_overlap_fraction": 0.15621015027231666,
+      "request_overlap_union_ns": 2809898524,
+      "selected_cpu_step_window": {
+        "definition": "envelope of closed CPU NVTX DiT ranges for steps 20..24; used only to select fully nested APIs",
+        "duration_ns": 18582304748,
+        "end_ns": 136575493918,
+        "start_ns": 117993189170
+      },
+      "selected_phase_gpu_kernel_busy_union_ns": 17987938166,
+      "selected_phase_unoccupied_definition": "gaps in only the fixed step-20..24 selected-kernel union; this is reported diagnostically and is not a physical GPU-idle/Amdahl bound",
+      "selected_phase_unoccupied_fraction_inside_analysis_window": 0.05783441335115295,
+      "selected_phase_unoccupied_inside_analysis_window_ns": 1104181543,
+      "sqlite": "/data/jiayu/yongyan_liu/auto_research/research/sva_candidate_concurrency/profiles/nsys_n9_parallel.sqlite",
+      "synchronization_activity": {
+        "count": 82,
+        "median_ns": 583652.5,
+        "p95_ns": 511710094.0,
+        "sum_ns": 10229826805,
+        "union_ns": 5249437290
+      },
+      "synchronization_api": {
+        "count": 20,
+        "median_ns": 253947413.5,
+        "p95_ns": 511248413.0,
+        "sum_ns": 5094174592,
+        "union_ns": 2643437073
+      },
+      "top10_kernel_time_coverage": 0.8544892986656104,
+      "top_kernels": [
+        {
+          "calls": 1200,
+          "median_ns": 4933196.0,
+          "name": "void flash::flash_fwd_kernel<Flash_fwd_kernel_traits<(int)128, (int)128, (int)32, (int)4, (bool)0, (bool)0, cutlass::bfloat16_t, Flash_kernel_traits<(int)128, (int)128, (int)32, (int)4, cutlass::bfloat16_t>>, (bool)0, (bool)0, (bool)0, (bool)0, (bool)0, (bool)1, (bool)0, (bool)0>(flash::Flash_fwd_params)",
+          "p95_ns": 10264856.0,
+          "share_of_kernel_sum": 0.29025494819384506,
+          "total_ns": 6036675011
+        },
+        {
+          "calls": 21180,
+          "median_ns": 39392.5,
+          "name": "void at::native::unrolled_elementwise_kernel<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase &)::[lambda() (instance 3)]::operator ()() const::[lambda() (instance 12)]::operator ()() const::[lambda(c10::BFloat16) (instance 1)], at::detail::Array<char *, (int)2>, TrivialOffsetCalculator<(int)1, unsigned int>, TrivialOffsetCalculator<(int)1, unsigned int>, at::native::memory::LoadWithCast<(int)1>, at::native::memory::StoreWithCast<(int)1>>(int, T1, T2, T3, T4, T5, T6)",
+          "p95_ns": 259680.0,
+          "share_of_kernel_sum": 0.10677935359824195,
+          "total_ns": 2220779558
+        },
+        {
+          "calls": 3600,
+          "median_ns": 531985.0,
+          "name": "void cutlass::Kernel<cutlass_80_tensorop_bf16_s16816gemm_bf16_256x128_32x3_tn_align8>(T1::Params)",
+          "p95_ns": 728545.0,
+          "share_of_kernel_sum": 0.0975743683945621,
+          "total_ns": 2029335779
+        },
+        {
+          "calls": 600,
+          "median_ns": 3220487.0,
+          "name": "void cutlass::Kernel<cutlass_80_tensorop_bf16_s16816gemm_bf16_128x256_32x3_tn_align8>(T1::Params)",
+          "p95_ns": 3948873.0,
+          "share_of_kernel_sum": 0.09713112195805015,
+          "total_ns": 2020117212
+        },
+        {
+          "calls": 600,
+          "median_ns": 2668022.5,
+          "name": "ampere_bf16_s1688gemm_bf16_128x128_ldg8_relu_f2f_tn",
+          "p95_ns": 3037095.0,
+          "share_of_kernel_sum": 0.0785272911477987,
+          "total_ns": 1633197777
+        },
+        {
+          "calls": 4880,
+          "median_ns": 214240.5,
+          "name": "void at::native::unrolled_elementwise_kernel<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase &)::[lambda() (instance 3)]::operator ()() const::[lambda() (instance 7)]::operator ()() const::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>, TrivialOffsetCalculator<(int)1, unsigned int>, TrivialOffsetCalculator<(int)1, unsigned int>, at::native::memory::LoadWithCast<(int)1>, at::native::memory::StoreWithCast<(int)1>>(int, T1, T2, T3, T4, T5, T6)",
+          "p95_ns": 444673.0,
+          "share_of_kernel_sum": 0.05442120518929798,
+          "total_ns": 1131843338
+        },
+        {
+          "calls": 3620,
+          "median_ns": 261008.0,
+          "name": "void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl_nocast<at::native::BinaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float>>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)",
+          "p95_ns": 315457.0,
+          "share_of_kernel_sum": 0.039144699621160454,
+          "total_ns": 814125070
+        },
+        {
+          "calls": 3600,
+          "median_ns": 214176.0,
+          "name": "void at::native::elementwise_kernel<(int)128, (int)4, void at::native::gpu_kernel_impl<at::native::BinaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float>>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)",
+          "p95_ns": 299776.0,
+          "share_of_kernel_sum": 0.03311129028775925,
+          "total_ns": 688643208
+        },
+        {
+          "calls": 1200,
+          "median_ns": 566225.0,
+          "name": "void at::native::elementwise_kernel<(int)128, (int)2, void at::native::gpu_kernel_impl_nocast<at::native::BinaryFunctor<c10::complex<double>, c10::complex<double>, c10::complex<double>, at::native::binary_internal::MulFunctor<c10::complex<double>>>>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 1)]>(int, T3)",
+          "p95_ns": 590113.0,
+          "share_of_kernel_sum": 0.03240223875418843,
+          "total_ns": 673896470
+        },
+        {
+          "calls": 1820,
+          "median_ns": 278144.5,
+          "name": "void at::native::<unnamed>::vectorized_layer_norm_kernel<float, float>(int, T2, const T1 *, const T1 *, const T1 *, T2 *, T2 *, T1 *)",
+          "p95_ns": 350432.0,
+          "share_of_kernel_sum": 0.025142781520706325,
+          "total_ns": 522915464
+        }
+      ]
+    }
+  }
+}

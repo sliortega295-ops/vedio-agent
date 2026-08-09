@@ -1,0 +1,13 @@
+{
+  "status": "FAILED",
+  "finished_at": "2026-08-09T12:59:01.632564+00:00",
+  "error": "RuntimeError('foreign GPU0 compute activity or telemetry failure invalidated condition N6_PARALLEL_b0_448a91af')",
+  "traceback": "Traceback (most recent call last):\n  File \"/data/jiayu/yongyan_liu/auto_research/research/sva_candidate_concurrency/package/bench_sparse_candidate_concurrency.py\", line 903, in main\n    profiled = run_condition(\n               ^^^^^^^^^^^^^^\n  File \"/data/jiayu/yongyan_liu/auto_research/research/sva_candidate_concurrency/package/bench_sparse_candidate_concurrency.py\", line 641, in run_condition\n    raise RuntimeError(\nRuntimeError: foreign GPU0 compute activity or telemetry failure invalidated condition N6_PARALLEL_b0_448a91af\n",
+  "global_compute_guard": {
+    "path": "/data/jiayu/yongyan_liu/auto_research/research/sva_candidate_concurrency/runs/profile_n6/telemetry/global_compute_guard.jsonl",
+    "observations": 509,
+    "foreign_process_observations": [],
+    "errors": [],
+    "interference_free": true
+  }
+}

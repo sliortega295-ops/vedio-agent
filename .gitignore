@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.cache/
+*.ncu-rep
+*.nsys-rep
+*.sqlite
+*.pt
+*.tar.zst
+*.tar.gz
+.DS_Store

@@ -1,0 +1,3 @@
+# Profiling-only harness extension
+# Adds --profile-mode SERIAL|PARALLEL (default PARALLEL).
+# It changes neither formal benchmark scheduling nor timing.
