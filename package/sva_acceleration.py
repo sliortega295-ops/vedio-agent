@@ -195,7 +195,8 @@ def sparse_cfg_prediction(
         raise ValueError("refresh_interval must be >= 1")
     refresh = (
         cache.unconditional is None
-        or global_step % refresh_interval == 0
+        or cache.last_refresh_step is None
+        or global_step - cache.last_refresh_step >= refresh_interval
     )
     if refresh:
         guided, unconditional, stats = candidate_batched_cfg_prediction(
