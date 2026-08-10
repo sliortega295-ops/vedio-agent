@@ -1,6 +1,11 @@
+import sys
 import unittest
+from pathlib import Path
 
 import torch
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
 
 from sva_acceleration import (
     HalvingRound,
