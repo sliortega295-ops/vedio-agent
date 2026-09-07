@@ -1,0 +1,12 @@
+# Isolated Diffusers backend; do not install over the frozen native-Wan runtime.
+# Install the CUDA/PyTorch build appropriate to the target GPU separately.
+torch>=2.4.0
+diffusers==0.34.0
+transformers==4.51.3
+accelerate>=1.7.0,<2
+numpy>=1.24
+packaging>=23
+Pillow>=9
+imageio>=2.31
+imageio-ffmpeg>=0.4.9
+sentencepiece>=0.2

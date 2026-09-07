@@ -2,6 +2,12 @@
 
 This branch adds implementations for the next concurrency/fusion experiments without changing the frozen `formal_n9_n6_v3` baseline.
 
+The branch also adds [`full-length sparse generation`](FULL_LENGTH_SPARSITY.md)
+as a separate Diffusers backend: interleaved anchors, residual reconstruction,
+and next-group residual-budget feedback. It does not replace the historical
+keyframe-only backend used by the methods below, and those batching/cache/resume
+mechanisms are not automatically compatible with adaptive per-candidate meshes.
+
 ## Implemented methods
 
 | Method | Exact? | Purpose |
