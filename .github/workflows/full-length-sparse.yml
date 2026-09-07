@@ -1,0 +1,24 @@
+name: Full-length sparse CPU contracts
+on:
+  push:
+    branches: [agent/sva-acceleration-methods]
+  pull_request:
+jobs:
+  cpu-contracts:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    env:
+      OMP_NUM_THREADS: '1'
+      HF_HUB_OFFLINE: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install torch==2.6.0 --index-url https://download.pytorch.org/whl/cpu
+      - run: python -m pip install -r package/requirements/full_length_sparse.txt pytest ruff
+      - run: python -m pytest package/tests -q
+      - run: python -m compileall -q package/full_length_sparse.py package/third_party/coframe
+      - run: bash -n scripts/run_full_length_sparse.sh
+      - run: ruff check --select E4,E7,E9,F package/full_length_sparse.py package/tests/test_sparse_evolution.py package/tests/test_full_length_sparse.py package/tests/test_sparse_diffusers.py package/third_party/coframe/config.py package/third_party/coframe/cli.py package/third_party/coframe/wan/pipeline.py package/third_party/coframe/wan/sparse_forward.py

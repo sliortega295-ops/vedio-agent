@@ -1,0 +1,22 @@
+CoFrame
+Copyright 2026 CoFrame contributors
+
+This project interfaces with and/or derives implementation structure from:
+
+1. Wan2.1 by the Alibaba Wan Team
+   https://github.com/Wan-Video/Wan2.1
+   Apache License 2.0
+
+2. Hugging Face Diffusers, including the Wan transformer and pipeline interfaces
+   https://github.com/huggingface/diffusers
+   Apache License 2.0
+
+3. RhymeFlow, whose public implementation supplies the clean-latent sequential
+   cosine selector used here as a baseline/prior and informed the Diffusers
+   0.34.0 active-frame integration contract
+   https://github.com/Simon-Dcs/RhymeFlow
+   Apache License 2.0
+
+CoFrame's adaptive mesh controller, block leave-one-out defect, interpolation
+reconstruction, causal probe, experiment harness, and associated tests are
+provided by the CoFrame contributors under the Apache License 2.0.

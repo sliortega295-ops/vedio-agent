@@ -1,0 +1,33 @@
+{
+  "repository": "https://github.com/sliortega295-ops/CADense",
+  "commit": "ceddd6f08ec4821acac1210da8044d3015f1601b",
+  "sha256": {
+    "NOTICE": "9e87ff01cda8792639d1960ad0b123f9427786e8b9bf6a1466b13e79dd864c8e",
+    "coframe/__init__.py": "9d881a3ba0ed8fba8191212c19f45cb863b8070164516aa376105a42006ba11e",
+    "coframe/budget.py": "49d3591b6d6f870d8a9c560b4ec9fb0b753b7663d9465ad0cd4b9c18f87ce80d",
+    "coframe/cli.py": "c134cf666b99ef62f6c648017826e3703a038b534bdc653543c7db6858e0c88d",
+    "coframe/compare.py": "7864ea9cdfc4eeef8e54102d287150e5aef1c34f4a17bad18079773625b8ddc8",
+    "coframe/config.py": "4187fe8e911dda6e2e0eec02131131bdb24a8aff4300c3a26e0706be40d8eaa9",
+    "coframe/controller.py": "150d07bed178ee075b081a5598a1402ed9e47b1b929d17d195808664f2be79c0",
+    "coframe/interpolation.py": "bdd450a0bf73216e88f58b1b325535bb18d152ff5394c0e85fe14fdb25daaef6",
+    "coframe/metrics.py": "a394232074532a143525bade0257685b6a991a28f8bfaac797493f6824dc4d27",
+    "coframe/ode_budget.py": "ac2897995a5b418fe4bb9f3826872da4c7d5b7c5af1aa07e1621f838cc39a0ad",
+    "coframe/selection.py": "f5c0231a1249d2c6f3eefb4bc7e0f73286009be74a48c035e75f292b7161d675",
+    "coframe/trace.py": "5dcbc5de5abaf3b99b4f8726ff2361dd5196695c89e42b8051329fbab48ce06d",
+    "coframe/wan/__init__.py": "09ef024f85024ac6e3d69cb788a613229f81ca1d438aee39268b7bf2630a360b",
+    "coframe/wan/pipeline.py": "df10ca62212f2b5345ce857a87def740e5df863568206973799094ad536cd39b",
+    "coframe/wan/sparse_forward.py": "a09b88cfad49e101310b0de25ba285d0ebbd29ba86f8c1546cc22b43f7a719c1",
+    "tests/test_cli_decode.py": "5b85f50c4158a43135e91ea1cbd11b81214470dcbd48760a780ea02481e02e66",
+    "tests/test_config.py": "0e78942fba0e9b59142e3daf75fa632bce379b0062d6696ddf77a9090eb89916",
+    "tests/test_controller.py": "34ae27532963af3f84ee30894206da3ccf7415f5bd58c18f83d3d4308b86f743",
+    "tests/test_interpolation.py": "c0f6f9285d0ba4857063a1ca7209124ad11bdf8623aa593c64c087339e3734a5",
+    "tests/test_metrics.py": "ddebb2f93575e1f886e88feaa683fb722c0fe50270156321bc5700b336d4fbc5",
+    "tests/test_ode_budget.py": "f32def7350da81cd65fc1ec7c29fbf44599e23126ad0d75bef10b918e0bf9c67",
+    "tests/test_selection.py": "c49b64854014f97129513d127d80ec1373d90690502a4d22f8873aca7127d59e",
+    "tests/test_sparse_block.py": "403a7f2b2617780fb060cae414a1f026531e57f447cf79f24eb4651995a25e4f",
+    "tests/test_stage1b_policies.py": "f3257611e120528bdad1a662c5af71ffd543957f7570ff0d775adad518eaee1d",
+    "tests/test_stage1c_signals.py": "cfa17212d4a95398b56a5b5607efb193b37ef237d02168442cbba1b499d800e0",
+    "tests/test_stage1d_budget.py": "aeef7be9a686dacbca22a34efaa282b66e641a092ef9f95615b091331d842f2c",
+    "tests/test_transformer_forward.py": "0c1ad4788909441fe2e7fcc3a5f05099467c0037cef092eae2dc5ddb2810bc76"
+  }
+}

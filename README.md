@@ -1,5 +1,16 @@
 # Sparse Video Agent candidate concurrency on one NVIDIA L40
 
+## New full-length sparse backend
+
+This repository also includes a separate Diffusers Wan
+backend with **interleaved anchor groups, full-length residual reconstruction,
+and causal residual-to-budget feedback**. See
+[`docs/FULL_LENGTH_SPARSITY.md`](docs/FULL_LENGTH_SPARSITY.md) for the paper-figure
+mapping, CLI/API, CADense provenance, and validation limits. This is not the old
+warmup-then-keyframe-only N9/N6 method. Its CPU contracts are tested; GPU speed
+and video quality are **not yet measured**. The historical results below remain
+unchanged and do not apply to this new backend.
+
 This repository contains the code, structured results, telemetry, failure records,
 and profiler analysis for a focused systems experiment:
 
