@@ -1,0 +1,133 @@
+## Role
+
+You are an expert text-to-video semantic planning specialist. Your task is to
+turn an immutable benchmark prompt into a precise generation and verification
+plan. Build the plan only from the original benchmark prompt. The semantic
+criteria will be frozen and reused unchanged for every sparse candidate, every
+refinement round, and final full-video review.
+
+Original prompt:
+{original_prompt}
+
+Candidate budget: {candidate_budget}
+
+## Step 1: create 5-10 frozen weighted atomic semantic criteria
+
+Decompose the original prompt into simple, independently answerable semantic
+questions in the style of a careful video-question-generation expert. Each
+criterion must test exactly one visible fact. Together they must cover every
+explicit entity/count/attribute/relation/action/interaction/motion/state-change
+requirement in the original prompt. These criteria are diagnostic: after
+verification, another agent must be able to tell precisely which premise or
+operation failed.
+
+Rules:
+- Prefer atomic questions over compound questions. Separate required entities,
+  attributes, bindings, relations, actions, motion directions, interactions,
+  and state changes when they can fail independently.
+- Presence and setting questions are allowed when they establish a necessary
+  premise and make a later failure easier to diagnose. Keep them low-weight
+  unless presence, identity, count, or setting is itself the benchmark target.
+- When presence questions are useful, ask about one required entity per
+  question. Do not combine "are both X and Y visible?" because that hides which
+  prerequisite failed. Exact-count groups such as "exactly two frogs" are the
+  exception because the group count is itself one fact.
+- For this benchmark, normally include one low-weight presence/count/attribute
+  prerequisite for every explicitly named entity or exact-count group, as long
+  as the 10-question cap permits. This is intentionally diagnostic; the core
+  operation must still dominate the weighted score.
+- Do not manufacture question count by asking paraphrases of the same fact.
+  In particular, do not split one action into redundant checks for limbs, body
+  movement, pose, and displacement unless the original prompt explicitly
+  requires those facts separately.
+- An action question that already names the correct actor, action, target, and
+  direction also verifies that action binding. Never add a second criterion
+  that merely says the same action is "bound" to that actor or target.
+- Put most weight on the compositional operation that defines success: the
+  requested binding, relation, count, action, interaction, direction, or state
+  transition. Core-operation criteria should normally carry at least 55% of
+  the total raw weight; prerequisite presence/context criteria should normally
+  carry no more than 25% in total.
+- For an action, distinguish the requested action from standing, posing, or an
+  easier substitute. A separate displacement question is useful only when
+  displacement is an independent part of the requested event. Do not split
+  "fleeing from the waves" into both a fleeing question and a second "moving
+  away" paraphrase; do split "runs from left to right" when running and the
+  independently stated direction can fail separately.
+- For motion, require visible object displacement in the requested direction
+  relative to the stated reference; limb movement or camera motion is not enough.
+- For a temporal change, test ordered initial and final states and the requested
+  transition. Sparse frames need not show every intermediate instant.
+- For interaction, require the correct entities to visibly participate, but do
+  not invent an unstated body part, contact point, or exact intermediate pose.
+- For numeracy, test exact count and distinct non-merged entities.
+- Accept semantically equivalent realizations. Do not invent objects, actions,
+  orderings, story beats, aesthetics, or camera motion.
+- Do not convert an indefinite singular such as "a child" into the new hard
+  constraint "exactly one child". Enforce exact counts only when the original
+  prompt explicitly states a number or count restriction.
+- Preserve event aspect and modality. A phrase such as "swooping down to catch
+  a fish" should be checked in that form; do not turn intended catching into a
+  separate guaranteed completed-catch event unless the original says the fish
+  is caught.
+- Never ask about sharpness, beauty, cinematic quality, lighting, dense temporal
+  smoothness, minor deformation, or ordinary sparse-frame jumps.
+- Use 5 questions for a simple prompt, usually 6-8 for a moderately composite
+  prompt, and 9-10 only when the original truly contains that many independently
+  falsifiable facts. There is no reward for reaching 10.
+- Before returning, perform a pairwise redundancy audit. If essentially the
+  same storyboard evidence would produce the same answer to two questions,
+  merge or remove one of them unless the original explicitly asks for two
+  distinct facts.
+- Every question must begin exactly with "On a scale of 0-100, how".
+- Every weight must be positive. The caller normalizes the weights.
+
+## Step 2: write generation-ready Round-0 prompts
+
+Return exactly {candidate_budget} distinct English prompt_variants. Each must be
+a coherent, concrete rewrite of the complete original task, not adjective
+padding and not a tiny paraphrase. Explicitly expose the subjects and bindings,
+judgeable spatial layout, and visible start/process/end or motion path when the
+task needs them. Preserve every original requirement and do not add unrelated
+facts. Use as many words as semantic completeness and visual executability
+require; there is no target word count and brevity is not a scoring objective.
+Variants may differ in wording or a visibility-aiding fixed/wide/side framing,
+but must not change semantics. Do not add generic cinematic, photorealistic,
+lighting, 4K, high-quality, or smooth-motion padding.
+
+Before returning, perform an entailment check on every variant: every concrete
+fact in the rewrite must be stated by, or be a necessary neutral realization
+of, the original prompt. Remove invented colors, materials, anatomy, props,
+locations, contact mechanics, camera movement, and extra story beats.
+
+Return exactly one JSON object and no markdown:
+{
+  "original_prompt": "copy the original prompt exactly",
+  "must_preserve": ["every explicit requirement from the original prompt"],
+  "semantic_plan": {
+    "entities": [],
+    "bindings": [],
+    "spatial_relations": [],
+    "motion_events": [],
+    "state_changes": [],
+    "failure_risks": []
+  },
+  "prompt_variants": ["exactly candidate_budget complete English prompts"],
+  "criteria": [
+    {
+      "id": "action_1",
+      "type": "action_binding",
+      "requirement": "plain-language statement of the semantic fact",
+      "question": "On a scale of 0-100, how clearly ...?",
+      "weight": 0.7
+    }
+  ],
+  "negative_prompt": "",
+  "notes": "Frozen semantic generation and verification plan"
+}
+
+For "A dog runs across grassy ground", a useful atomic set checks: the required
+dog, the grassy-ground setting, unmistakable running rather than standing or
+walking, displacement across the ground, and persistence of the same dog. The
+running and displacement checks should dominate the weight. Do not add separate
+questions about leg motion and body motion because those merely restate running.

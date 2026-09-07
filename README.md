@@ -1,7 +1,21 @@
-# Sparse Video Agent candidate concurrency on one NVIDIA L40
+# Sparse Video Agent
 
-This repository contains the code, structured results, telemetry, failure records,
-and profiler analysis for a focused systems experiment:
+This repository contains two deliberately separated components:
+
+1. [`agent/`](agent/): the complete SparseMAC sparse-to-full agent pipeline,
+   including planning, all prompt templates, sparse generation, VLM verification,
+   iterative refinement, warmup-latent reuse, and final full-video selection.
+2. [`package/`](package/): the frozen source and evidence for the earlier
+   single-L40 candidate-concurrency systems experiment.
+
+Start with [`agent/README.md`](agent/README.md) to run SparseMAC and
+[`agent/PROMPTS.md`](agent/PROMPTS.md) to inspect every current and legacy prompt.
+The remainder of this page documents the frozen concurrency artifact.
+
+## Candidate concurrency experiment
+
+The artifact contains the code, structured results, telemetry, failure records,
+and profiler analysis for this focused systems question:
 
 > After temporal sparsity has already reduced a Video-DiT request, does it also
 > make two independent test-time-search trajectories more concurrency-friendly?
@@ -55,6 +69,8 @@ per-kernel inflation ratio or SM/Tensor/DRAM SOL from these traces.
 
 ## Repository layout
 
+- `agent/`: full SparseMAC agent, prompt corpus, tests, and Wan integration
+  entry points.
 - `package/`: frozen benchmark harness, sparse generator, and vendored Wan code.
 - `scripts/`: exact launch and Nsight Systems scripts used on the server.
 - `results/`: formal JSON/JSONL results, telemetry, invalid attempts, and parsed
@@ -72,9 +88,10 @@ and its SHA256 manifest.
 
 ## Reproduce
 
-See [`docs/REPRODUCIBILITY.md`](docs/REPRODUCIBILITY.md). Model weights and Conda
-environments are intentionally excluded; the original run used
-`/data/models/Wan2.1-T2V-1.3B` and a user-owned environment.
+For the agent, see [`agent/README.md`](agent/README.md). For the frozen
+concurrency study, see [`docs/REPRODUCIBILITY.md`](docs/REPRODUCIBILITY.md).
+Model weights, generated videos, API credentials, and Conda environments are
+intentionally excluded.
 
 ## Claim boundary
 

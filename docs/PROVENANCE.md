@@ -33,3 +33,31 @@ numbers; the old result is not retroactively relabeled.
 `manifests/source_extract_benchmark_files.sha256` records hashes at the initial
 source extraction stage. Absolute paths embedded in historical manifests are
 kept as provenance rather than rewritten.
+
+## SparseMAC agent source
+
+The `agent/` tree was imported read-only on 2026-09-07 from the active L40
+workspace:
+
+```text
+/data/jiayu/yongyan_liu/SparseMAC
+```
+
+That workspace was not a Git checkout, so no source commit is invented. The
+published copy includes the active SemanticV2 planner/verifier/analyzer, legacy
+modules, prompt assets, tests, the primary orchestrator, batch runner, resume
+tool, and dense-only ablation scripts. Runtime outputs, caches, backups, model
+weights, videos, latent checkpoints, logs, and `.env.local` were excluded.
+
+Publication changes are intentionally limited to integration and hygiene:
+
+- machine-specific defaults became repository-local paths or environment
+  variables;
+- one embedded API credential in a historical resume helper was removed;
+- Wan generation entry points were included under `agent/generation_backend/`;
+- a private agent-side Wan copy gained the warmup-latent resume interface
+  required by the final full-generation stage, leaving `package/` frozen;
+- documentation, package metadata, and public-package tests were added.
+
+These changes do not relabel old run results or claim that a new full GPU
+experiment was executed during publication.

@@ -1,0 +1,5 @@
+Primary skill: spatial_relationship.
+Focus on the target spatial relation between entities: left/right/front/behind/under/above/beside/on/inside.
+Entity presence should be fused into relation questions unless an endpoint is small or easy to miss.
+Motion words like walking/flying/crawling are secondary if the spatial relation is the main target.
+Suggested weights: core spatial relation 0.50-0.65, endpoint recognizability 0.15-0.25, relation stability/readability 0.15-0.25, context 0.05.

@@ -1,0 +1,1 @@
+Secondary constraint: include contact/causal/reciprocal evidence if present, without overriding primary scoring.

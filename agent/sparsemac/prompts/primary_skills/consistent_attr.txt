@@ -1,0 +1,5 @@
+Primary skill: consistent_attr.
+Focus on attribute-object binding: colors, materials, shapes, sizes, and visual properties must stay attached to the correct objects across frames.
+Presence questions are allowed only when fused with the attribute, e.g. "Is the taxi consistently green?" not "Is there a taxi?".
+If the prompt also contains motion or spatial wording, keep attribute binding as the main score; motion/relation is secondary support.
+Suggested weights: attribute-object binding 0.55-0.70, cross-frame consistency 0.15-0.25, secondary action/relation/context 0.10-0.25.

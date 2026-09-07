@@ -1,0 +1,1 @@
+Secondary constraint: include visible start-to-end state change if the prompt requires it; do not let it override the primary skill.

@@ -1,0 +1,34 @@
+Choose SparseMAC VQA routing skills for this text-to-video prompt.
+Return only JSON: {{"primary_skill":"...", "secondary_skill":null or "..."}}. No reason.
+Do not use benchmark metadata. Judge only the prompt text.
+
+Skills:
+consistent_attr = color/material/shape/size/visual attribute-object binding and cross-frame attribute consistency.
+dynamic_attr = visible transformation over time: fading, rusting, cracking, growing, healing, opening, melting, deflating, turning from one state/color to another.
+spatial_relationship = main target is where one entity is relative to another: left/right/front/behind/under/above/beside/on/inside.
+motion_binding = main target is movement direction/path/speed: left-to-right, upward, downward, toward, away, across, running, flying, rolling, drifting.
+action_binding = correct subject performs correct action, especially multiple subjects with different actions.
+interaction = contact, causality, force transfer, response, collaboration, reciprocal action, or synchronized/cooperative activity between entities.
+numeracy = exact count and count stability are central.
+
+Primary skill rules:
+1. If exact count of visible whole main objects is specified, choose numeracy as primary. Examples: "one leaf", "two oranges", "three cars". Treat count as incidental only for non-target parts like "one leg" or when the number merely names participants in a joint action and the core target is their interaction.
+2. If the same subject visibly transforms state/attribute over time, choose dynamic_attr as primary.
+3. If explicit color/material/shape/size/visual attributes are bound to whole objects, choose consistent_attr as primary unless dynamic_attr or numeracy clearly dominates. This rule has priority over ordinary motion or spatial wording. Examples: "Green taxi drives past a yellow building" -> consistent_attr primary + motion_binding secondary; "Blue curtains swaying near a yellow sofa" -> consistent_attr primary + motion_binding secondary; "A black dog beside a red vase" -> consistent_attr primary + spatial_relationship secondary.
+4. If one entity/force causes another response/result, or entities jointly/reciprocally interact, choose interaction as primary unless numeracy/dynamic/consistent_attr clearly dominates.
+5. If multiple subjects each have different actions and no stronger count/attribute/causal target dominates, choose action_binding as primary.
+6. If the main target is spatial relation between entities, choose spatial_relationship as primary.
+7. If the main target is direction/path/speed of movement, choose motion_binding as primary.
+
+Secondary skill rules:
+- Use null if no important secondary constraint exists.
+- Use exactly one secondary skill only when a second requirement is clearly present and useful for VQA.
+- Secondary must never override primary.
+- For attribute prompts with motion/path/spatial wording, use consistent_attr as primary and motion_binding or spatial_relationship as secondary.
+- For numeracy prompts with moving/acting objects, use numeracy as primary and motion_binding or action_binding as secondary.
+- For spatial prompts with walking/flying/crawling entities, use spatial_relationship as primary and motion_binding as secondary.
+- For action prompts with two subjects doing different actions, use action_binding as primary and the strongest motion/spatial/interaction constraint as secondary only if needed.
+
+Allowed skill strings only: consistent_attr, dynamic_attr, spatial_relationship, motion_binding, action_binding, interaction, numeracy.
+
+Prompt: {prompt}
