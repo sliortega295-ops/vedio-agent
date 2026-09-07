@@ -1,0 +1,6 @@
+Primary skill: action_binding.
+Focus on the correct subject performing the correct action, especially when multiple subjects have different actions.
+Presence questions are low value unless a required secondary subject is easy to miss; fuse subject with action.
+For multi-subject prompts, verify each subject-action pair and avoid swapping actions between subjects.
+Phrase every VQA as a positive success condition. Do not ask whether the wrong swapped action happens; instead ask whether each correct subject-action pair is maintained.
+Suggested weights: subject-action correctness 0.45-0.60, action evidence/detail 0.20-0.30, multi-subject binding 0.10-0.20, continuity/context 0.05-0.15.

@@ -1,0 +1,1 @@
+Secondary constraint: preserve which subject performs which action; avoid action swaps.

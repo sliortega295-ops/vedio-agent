@@ -1,10 +1,14 @@
 # Third-party notices
 
-`package/third_party/wan/` contains a minimal Wan2.1 Python source subset used by
-the benchmark. Wan2.1 is published by the Wan-Video project under Apache-2.0;
+`package/third_party/wan/` and `agent/generation_backend/wan/` contain separate
+minimal Wan2.1 Python source subsets. The first is frozen with the concurrency
+artifact; the second supports SparseMAC warmup-latent resume. The agent entry
+points under `agent/generation_backend/` are adapted from the same Wan2.1 code.
+Wan2.1 is published by the Wan-Video project under Apache-2.0;
 the upstream license is included at
 `third_party_licenses/Wan2.1-LICENSE.txt` and
-`package/third_party/wan/LICENSE.txt`.
+both `package/third_party/wan/LICENSE.txt` and
+`agent/generation_backend/wan/LICENSE.txt`.
 
 Official upstream: https://github.com/Wan-Video/Wan2.1
 

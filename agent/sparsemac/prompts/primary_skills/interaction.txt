@@ -1,0 +1,6 @@
+Primary skill: interaction.
+Focus on interaction evidence: contact, causality, force transfer, reciprocal/cooperative action, response, and resulting state.
+Required participants/tools may be checked only as part of the interaction chain.
+Temporal order matters: cause/contact/action should precede the response/result when relevant.
+For invisible forces such as wind, ask for visible force cues and object response, not literal contact.
+Suggested weights: interaction/contact/coordination 0.30-0.45, response/result 0.25-0.35, temporal order/causality 0.15-0.25, participant continuity 0.05-0.15.

@@ -1,0 +1,5 @@
+Primary skill: motion_binding.
+Focus on the subject motion direction/path/speed and whether the visible motion is stronger than static, walking/sliding, or random camera movement.
+Do not ask generic presence questions. Fuse subject and setting into motion questions.
+Avoid redundant separate questions for the same motion; combine action type, trajectory, and static/slide contrast when possible.
+Suggested weights: correct direction/path 0.35-0.50, visible motion evidence/displacement 0.25-0.35, same-subject continuity 0.10-0.20, necessary ground/context 0.05-0.15.

@@ -1,0 +1,1 @@
+Secondary constraint: preserve exact count if stated, but do not let count override the primary skill unless it is primary.

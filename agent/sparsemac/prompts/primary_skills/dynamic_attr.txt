@@ -1,0 +1,6 @@
+Primary skill: dynamic_attr.
+Focus on visible state or attribute transformation over time.
+Ask about start state, transition process, end state, and same-object continuity. Do not ask about invisible causes such as weather causing cracks unless causation is visibly shown.
+Avoid hard material/species questions; use visually grounded wording.
+Do not add unmentioned contextual or lighting checks just to explain the transformation; keep context low weight and only when needed to identify the target.
+Suggested weights: transformation process 0.40-0.50, start/end states 0.25-0.35, temporal continuity/same subject 0.15-0.25, context 0.05-0.10.

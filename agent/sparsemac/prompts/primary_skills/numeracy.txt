@@ -1,0 +1,5 @@
+Primary skill: numeracy.
+Focus on exact count and count stability. Count is the main score even if objects move or act.
+Ask whether the required number is visible/countable and remains stable without merging, duplicating, disappearing, or splitting.
+Secondary action/relation should not outweigh count.
+Suggested weights: exact count 0.40-0.50, count stability/distinctness 0.20-0.30, entity recognizability 0.10-0.20, secondary action/relation/context 0.10-0.20.

@@ -1,0 +1,1 @@
+Secondary constraint: include required motion/path/direction as support, but keep primary scoring dominant.

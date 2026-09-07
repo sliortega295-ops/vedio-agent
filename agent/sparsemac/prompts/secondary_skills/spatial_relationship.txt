@@ -1,0 +1,1 @@
+Secondary constraint: include the named spatial relation as a supporting check or fuse it into primary questions.

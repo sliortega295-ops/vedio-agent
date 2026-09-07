@@ -1,5 +1,6 @@
 __pycache__/
 *.py[cod]
+.venv/
 .cache/
 *.ncu-rep
 *.nsys-rep
@@ -8,3 +9,14 @@ __pycache__/
 *.tar.zst
 *.tar.gz
 .DS_Store
+
+# SparseMAC runtime state and credentials
+agent/.env
+agent/.env.local
+agent/config/*.env
+!agent/config/*.example
+agent/logs/
+agent/runs/
+agent/build/
+agent/dist/
+agent/*.egg-info/
