@@ -1,0 +1,7 @@
+{
+  "id": "custom-bell-av-v0",
+  "prompt": "In one continuous shot, a hand picks up a small brass bell, rings it once with a synchronized clear chime, then places it back on the table with a soft contact sound. The chime decays naturally. No speech or background music.",
+  "audio_required": true,
+  "split": "smoke",
+  "source": "project_authored_smoke_NOT_BENCHMARK"
+}

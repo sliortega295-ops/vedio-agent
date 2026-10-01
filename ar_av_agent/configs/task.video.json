@@ -1,0 +1,7 @@
+{
+  "id": "custom-bell-video-v0",
+  "prompt": "In one continuous shot, a hand picks up a small brass bell, rings it once, then places it back on the table.",
+  "audio_required": false,
+  "split": "smoke",
+  "source": "project_authored_smoke_NOT_BENCHMARK"
+}

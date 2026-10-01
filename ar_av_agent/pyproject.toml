@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "verified-prefix-arav"
+version = "0.1.0"
+description = "Append-only autoregressive audio/video agent research prototype"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.scripts]
+arav = "arav.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["arav*"]
+
+[tool.setuptools.package-data]
+arav = ["prompts/*.md"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

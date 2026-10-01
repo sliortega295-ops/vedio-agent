@@ -1,0 +1,7 @@
+{
+  "upstream_root": "/ABSOLUTE/PATH/LongLive/LongLive1.0",
+  "upstream_config": "/ABSOLUTE/PATH/LongLive/LongLive1.0/configs/REVIEWED_CONFIG.yaml",
+  "checkpoint": "/ABSOLUTE/PATH/LongLive-1.3B/model.pt",
+  "device": "cuda:0",
+  "max_latent_frames": 600
+}
