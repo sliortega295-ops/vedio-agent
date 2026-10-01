@@ -1,0 +1,5 @@
+[
+  {"id": "pick", "event": "The hand picks up the bell from the table."},
+  {"id": "ring", "event": "The hand rings the bell exactly once."},
+  {"id": "place", "event": "The hand places the same bell back on the table."}
+]

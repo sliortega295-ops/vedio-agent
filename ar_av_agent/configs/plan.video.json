@@ -1,0 +1,5 @@
+{"stages": [
+  {"id": "pick", "goal": "The hand picks up the same brass bell", "video_prompt": "A hand gently lifts a brass bell from a wooden table. Keep the bell's identity and the continuous camera view unchanged.", "checks": ["hand contacts bell", "bell leaves table"], "min_chunks": 1, "nominal_chunks": 3, "max_chunks": 6},
+  {"id": "ring", "goal": "The lifted bell is rung once", "video_prompt": "The same hand holds the same brass bell above the table and makes one clear ringing gesture, then stops moving it.", "checks": ["bell remains in hand", "one ringing gesture"], "min_chunks": 1, "nominal_chunks": 3, "max_chunks": 6},
+  {"id": "place", "goal": "The bell returns to the table", "video_prompt": "The same hand gently places the same brass bell upright on the table, releases it, and withdraws. The bell remains still.", "checks": ["bell on table", "hand releases bell"], "min_chunks": 1, "nominal_chunks": 3, "max_chunks": 6}
+]}

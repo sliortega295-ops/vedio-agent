@@ -1,0 +1,19 @@
+{
+  "checked_on": "2026-10-01",
+  "python": "3.13.5",
+  "command": "python -m pytest -q",
+  "exit_code": 0,
+  "output": "............................                                             [100%]\n28 passed in 1.24s",
+  "compileall": "passed",
+  "cpu_mock_demo": {
+    "attempts": 3,
+    "rejected": 1,
+    "committed": 2,
+    "official_score": null
+  },
+  "real_model_inference": "NOT_RUN",
+  "joint_av_driver": "NOT_INTEGRATED",
+  "official_full_data_download": "NOT_RUN_IN_OFFLINE_CONTAINER",
+  "official_benchmark_scoring": "NOT_RUN",
+  "llm_http_requests": "NOT_RUN"
+}
